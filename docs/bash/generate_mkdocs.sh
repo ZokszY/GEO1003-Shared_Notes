@@ -38,6 +38,7 @@ extract_title() {
 generate_nav_section() {
     local input_file="$1"
     local prefix="$2"
+    local added_level=$3
     # Process example files
     while read -r filename || [[ -n "$filename" ]]; do
         basename="${filename%.*}"
@@ -47,7 +48,7 @@ generate_nav_section() {
         if [[ "$filename" == */title.md ]]; then
             level_count=$(($level_count - 1))
         fi
-        spaces=$(printf "%*s" $((2 * level_count)) "")
+        spaces=$(printf "%*s" $((2 * level_count + added_level)) "")
         if [[ "$filename" == */title.md ]]; then
             echo "${spaces}- $title:" >>"$output_file"
         else
@@ -60,7 +61,7 @@ generate_nav_section() {
 }
 
 # Generate "Concise version" nav
-generate_nav_section "notes.txt" ""
+generate_nav_section "notes.txt" "" 0
 
 # Add separator for "Long version"
 cat <<EOF >>"$output_file"
@@ -68,7 +69,7 @@ cat <<EOF >>"$output_file"
 EOF
 
 # Generate "Long version" nav
-generate_nav_section "notes.txt" "-long"
+generate_nav_section "notes.txt" "-long" 0
 
 # Add separator for "Books notes"
 cat <<EOF >>"$output_file"
@@ -77,6 +78,14 @@ cat <<EOF >>"$output_file"
 EOF
 
 # Generate "Books notes" nav
-generate_nav_section "books.txt" ""
+generate_nav_section "books.txt" "" 0
+
+# Add separator for "Questions"
+cat <<EOF >>"$output_file"
+  - Questions:
+EOF
+
+# Generate "Books notes" nav
+generate_nav_section "questions.txt" "" 2
 
 echo "mkdocs.yml generated successfully!"

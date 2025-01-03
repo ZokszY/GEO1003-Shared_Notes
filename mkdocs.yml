@@ -39,6 +39,7 @@ edit_uri: edit/main/docs/
 
 markdown_extensions:
   - attr_list
+  - md_in_html
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -49,6 +50,10 @@ markdown_extensions:
   - mdx_truly_sane_lists
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
 
 extra_javascript:
   - javascripts/katex.js
@@ -156,3 +161,5 @@ nav:
       - Unknown Title: "content/books/hexagon_intro_to_GNSS/7-GNSS threats.md"
       - Unknown Title: "content/books/hexagon_intro_to_GNSS/8-Autonomy.md"
       - 9 - GNSS applications and equipment: "content/books/hexagon_intro_to_GNSS/9-GNSS applications and equipment.md"
+  - Questions:
+      - Assignment 0 - Formative: "content/questions/lab_0.md"
