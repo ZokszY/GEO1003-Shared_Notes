@@ -106,7 +106,7 @@ nav:
       - Coordinate Systems: "content/notes/crs/coordinate_systems.md"
       - Terrestrial Reference Systems and Frames: "content/notes/crs/terrestrial_reference_frames_systems.md"
       - Datum and Transformations: "content/notes/crs/datum_transformations.md"
-      - Map Projection: "content/notes/crs/map_projections.md"
+      - Map Projections: "content/notes/crs/map_projections.md"
       - RDNAP: "content/notes/crs/rd_nap.md"
     - Wi-Fi-monitoring / Fingerprinting:
       - Introduction: "content/notes/wifi/intro.md"
@@ -151,7 +151,7 @@ nav:
       - Coordinate Systems: "content/notes/crs/coordinate_systems-long.md"
       - Terrestrial Reference Systems and Frames: "content/notes/crs/terrestrial_reference_frames_systems-long.md"
       - Datum and Transformations: "content/notes/crs/datum_transformations-long.md"
-      - Map Projection: "content/notes/crs/map_projections-long.md"
+      - Map Projections: "content/notes/crs/map_projections-long.md"
       - RDNAP: "content/notes/crs/rd_nap-long.md"
     - Wi-Fi-monitoring / Fingerprinting:
       - Introduction: "content/notes/wifi/intro-long.md"

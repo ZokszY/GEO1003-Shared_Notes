@@ -11,13 +11,15 @@
 -->
 
 ## Coordinate Systems
+
 ### Coordinate Reference Systems
+
 According to the EPSG and ISO guidelines, four groups of CRSs can be distinguished:
 
-*   **Geographic CRSs** give geographic coordinates in degrees (2D latitude and longitude, and for 3D also height) relative to an ellipsoidal model of the Earth's surface. Examples include the European ETRS89, the global ITRF2020, and WGS 84. Geographic CRSs, such as ETRS89 and WGS 84, cannot be visualized on a flat plane without a map projection.
-*   **Projected CRSs** present geo-information on a flat surface in Cartesian (x and y) coordinates. A projected CRS is a derivative of a geographic CRS, where a map projection is used for the depiction on the flat surface. An example of this is the Dutch RD with the geographic CRS RD-Bessel as its basis.
-*   **Vertical CRSs** for recording height and depth relative to a reference plane. This reference plane is often based on the direction of gravity and normally does not coincide with the surface of an ellipsoid. With a reference plane based on the direction of gravity, no water flows between two points of equal height, but water usually does flow between two points of equal ellipsoidal height. Examples of vertical CRSs are the NAP and the LAT.
-*   **Compound CRSs** are composite CRSs, for example: RDNAP which is composed of the projected CRS RD and the vertical CRS NAP.
+* **Geographic CRSs** give geographic coordinates in degrees (2D latitude and longitude, and for 3D also height) relative to an ellipsoidal model of the Earth's surface. Examples include the European ETRS89, the global ITRF2020, and WGS 84. Geographic CRSs, such as ETRS89 and WGS 84, cannot be visualized on a flat plane without a map projection.
+* **Projected CRSs** present geo-information on a flat surface in Cartesian (x and y) coordinates. A projected CRS is a derivative of a geographic CRS, where a map projection is used for the depiction on the flat surface. An example of this is the Dutch RD with the geographic CRS RD-Bessel as its basis.
+* **Vertical CRSs** for recording height and depth relative to a reference plane. This reference plane is often based on the direction of gravity and normally does not coincide with the surface of an ellipsoid. With a reference plane based on the direction of gravity, no water flows between two points of equal height, but water usually does flow between two points of equal ellipsoidal height. Examples of vertical CRSs are the NAP and the LAT.
+* **Compound CRSs** are composite CRSs, for example: RDNAP which is composed of the projected CRS RD and the vertical CRS NAP.
 
 In this chapter of the summary, we will highlight two examples of Coordinate Reference Systems. Before doing so, here is an overview of some terminology and their examples:
 
@@ -48,6 +50,7 @@ NB: be aware of the difference between epoch and the year in names!
 * CRS (= projection in some software) = datum + coordinate system
 
 ### Geographic Coordinate Reference Systems
+
 The use of Geographic Coordinate Reference Systems is very common. They use degrees of latitude and longitude and sometimes also a height value to describe a location on the earth’s surface.
 
 **Lines of latitude** run parallel to the equator and divide the earth into 180 equally spaced sections from North to South. The reference line for latitude is the equator and each **hemisphere** is divided into ninety sections, each representing one degree of latitude. Wherever you are on the earth’s surface, the distance between the lines of latitude is the same (60 nautical miles).
@@ -56,9 +59,10 @@ The use of Geographic Coordinate Reference Systems is very common. They use degr
 
 Using the geographic coordinate system, we have a grid of lines dividing the earth into squares that cover approximately 12363.365 square kilometres at the equator — a good start, but not very useful for determining the location of anything within that square. To be truly useful, a map grid must be divided into small enough sections so that they can be used to describe (with an acceptable level of accuracy) the location of a point on the map. To accomplish this, degrees are divided into **minutes** (') and **seconds** ("). There are sixty minutes in a degree, and sixty seconds in a minute (3600 seconds in a degree). So, at the equator, one second of latitude or longitude = 30.87624 meters.
 
-![img_1.png](../../../images/Geographic_coordinates.png)
+![](../../../images/Geographic_coordinates.png)
 
 ### Projected Coordinate Reference Systems
+
 There is a difference between a geographic coordinate system (GCS) and a projected coordinate system (PCS). In short, a GCS defines **where** the data is located on the earth’s surface; a PCS tells the data **how** to draw on a flat surface. A GCS is round, and so records locations in angular units (usually degrees). A PCS is flat, so it records locations in linear units (usually meters).
 ![img.png](../../../images/PCS_vs_GCS.png)
 
@@ -73,13 +77,14 @@ Coordinates in a PCS are recorded in **a Linear Unit**, often meters. A PCS also
 Coordinates in a GCS are recorded in an Angular Unit, usually degrees. The **Prime Meridian** is an arbitrary line of longitude that is defined as 0°. The **Datum** defines which model is used to represent the earth’s surface and where that model is positioned relative to the surface. The **Spheroid** is the regular model of the irregular earth. It’s part of the datum. **Semimajor Axis, Semiminor Axis**, and **Inverse Flattening** define the size of the spheroid.
 
 ### Linear Reference Systems
+
 **Linear referencing** is the method to store and geographically locate data using relative positions along a measured line feature without the need to explicitly use x,y coordinates or an address. When data is linearly referenced, measure values are used to measure the distance along a line feature, allowing multiple sets of dynamically changing attribute data to be associated with any portion of an existing linear feature, independent of its beginning and end. Linear referencing is used for many reasons. The following are the two primary reasons:
 
-*   Many locations are recorded as events along linear features.
+* Many locations are recorded as events along linear features.
 
 >For example, locations of traffic accidents are recorded using a convention such as "27 meters east of reference mile marker 35 along State Highway 287." Many sensors record conditions using measures of distance or time along the lines—along pipelines, along roads, along streams, and so forth.
 
-*   Linear referencing is also used to associate multiple sets of attributes to portions of linear features without requiring that underlying lines be segmented (split) each time that attribute values change.
+* Linear referencing is also used to associate multiple sets of attributes to portions of linear features without requiring that underlying lines be segmented (split) each time that attribute values change.
 
 >For example, most road centreline feature classes are segmented where three or more road segments intersect and where the road names change.
 
