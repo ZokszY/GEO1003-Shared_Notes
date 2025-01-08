@@ -2,7 +2,10 @@ title: "GEO1003 - Shared Notes"
 author: "Master Geomatics Students"
 date: "2024-12-07"
 lang: "en"
-fontsize: "12pt"
+toc: true
+toc-depth: 2
+fontsize: "11pt"
+fontfamily: "libertinus"
 documentclass: "scrartcl"
 geometry: a4paper, margin=0.75in, top=0.75in, bottom=0.75in, left=1in, right=1in
 header-includes:
