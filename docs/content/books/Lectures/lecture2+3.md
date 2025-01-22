@@ -1,5 +1,13 @@
 ## Lecture 2 + 3： GNSS Code Code-Observation Positioning Performance for the built environment Part 1 + 2
 
+<style>
+img {
+    width: 300px;
+    height: 200px;
+}
+</style>
+
+
 ### Structure 
 1. Basic Principles
 2. GNSS System Overview
@@ -72,7 +80,7 @@ Generally, The satellites send one-way signals to receiver. By measuring how lon
 ### Position Determination and DOP and Time to First Fix
 #### How to Determine Position?
 1. How many unknown parameters?
-   - 3 coordinates (XYZ) (Cartesian coords) WGS84 or ($\lamda$, $\phi$, h) WGS84 (latitude, longtitude, elevation) (Geographic coords)
+   - 3 coordinates (XYZ) (Cartesian coords) WGS84 or ($\lambda$, $\phi$, h) WGS84 (latitude, longtitude, elevation) (Geographic coords)
    - clock bias: the time difference between the satellite precise atomic clock and receiver's quartz clock
 2. **Thus 4 satellites are needed! But more is beter!**
 
@@ -93,12 +101,12 @@ how long your GPS device takes to calculate its first position
 - Device knows nothing
 - Must search for all satellites from scratch
 - Takes longest time
-1. Warm Start: Medium
+2. Warm Start: Medium
 - Has some recent data
 - Must get new ephemeris data
 - Each satellite broadcasts every 30s
 - Data valid for 4 hours
-1. Hot Start: Fastest
+3. Hot Start: Fastest
 - Has all recent valid data
 - Can quickly connect to satellites
 - Most common in daily use
@@ -114,7 +122,7 @@ QuickFIX/Assisted GPS is a technology to speed up this process, typically used i
   * Reference time
 - Gets pseudo-ranges from satellites
 - Device calculates its own position
-1. Mobile Station Assisted A-GPS:
+2. Mobile Station Assisted A-GPS:
 - Device gets same data from network
 - Also gets pseudo-ranges from satellites
 - BUT device sends measurements to server
