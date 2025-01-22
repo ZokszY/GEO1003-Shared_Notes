@@ -34,7 +34,7 @@ The ionosphere delay scales, to a very good approximation, with the **inverse of
 
 GNSS receivers **ignore signals** from below a certain elevation, making them prone to errors (typically between 5° and 15°).
 
-![Errors due to terrain, buildings, and elevation angle](../../../images/groves/gnss_masking_terrain_buildings.png){width=500px}
+![Errors due to terrain, buildings, and elevation angle](../../../images/groves/gnss_masking_terrain_buildings.png){width="500"}
 
 ### GNSS Augmentation Systems
 

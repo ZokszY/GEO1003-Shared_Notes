@@ -3,7 +3,7 @@
 Perceiving and describing space:
 
 * Empty or containing things
-* Unlimited or bounded  
+* Unlimited or bounded
 * Physical or imaginary
 
 **Cell**: is a bounded portion of space (a space unit)
@@ -17,12 +17,12 @@ Space classification according to reception of GPS signal:
 * **Light indoors**: inside building, slight coverage (e.g. areas around windows), some satellites availability
 * **Deep indoors**: inside building, no satellite coverage
 
-![Types of spaces for GPS](../../../images/zlatanova/spaces.png){width=500px}
+![Types of spaces for GPS](../../../images/zlatanova/spaces.png){width="500"}
 
 Spaces are abstracted and represented using:
 
-* Boundary Representation (BRep)  
-* Constructive Solid Geometry (CSG)  
+* Boundary Representation (BRep)
+* Constructive Solid Geometry (CSG)
 * Spatial Occupancy Enumeration
 
 **Navigation network** (supported by Poincaré duality theory):

@@ -1,6 +1,6 @@
 ## Error Sources
 
-![Principle sources of GNSS errors](../../../images/groves/gnss_principle_error_sources.png){width=400px}
+![Principle sources of GNSS errors](../../../images/groves/gnss_principle_error_sources.png){width="400"}
 
 ### Pseudorange Calculation
 
@@ -39,7 +39,7 @@ Ionospheric delay:
 
 GNSS receivers **ignore signals** from below a certain elevation, making them prone to errors (typically between 5° and 15°).
 
-![Errors due to terrain, buildings, and elevation angle](../../../images/groves/gnss_masking_terrain_buildings.png){width=500px}
+![Errors due to terrain, buildings, and elevation angle](../../../images/groves/gnss_masking_terrain_buildings.png){width="500"}
 
 ### GNSS Augmentation Systems
 

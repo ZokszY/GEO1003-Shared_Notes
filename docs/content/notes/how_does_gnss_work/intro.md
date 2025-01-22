@@ -5,14 +5,14 @@
 Below are the 4 constellations of GNSS systems:
 
 * **Global Positioning System (GPS)** \- United States
-  * *Standard Positioning Service (SPS)*  
-  * *Precise Positioning Service (PPS)*  
+  * *Standard Positioning Service (SPS)*
+  * *Precise Positioning Service (PPS)*
 * **GLONASS** \- Russia
-* **Galileo** \- Europe  
-  * *Open service (OS)*  
-  * *Public regulated service (PRS)*  
+* **Galileo** \- Europe
+  * *Open service (OS)*
+  * *Public regulated service (PRS)*
 * **Beidou(/Compass)** \- China
 
 Their properties are:
 
-![Properties of GNSS systems](../../../images/groves/gnss_constellations_properties.png){width=600px}
+![Properties of GNSS systems](../../../images/groves/gnss_constellations_properties.png){width="600"}

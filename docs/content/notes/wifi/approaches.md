@@ -9,7 +9,7 @@ Wi-Fi monitoring and fingerprinting are techniques used to gather information ab
 - How It Works: A Wi-Fi adapter is set to monitor mode, allowing it to capture all wireless traffic in range, even if not destined for the monitoring device.
 - Applications:
   - Analyzing traffic patterns and identifying potential interference.
-  
+
 ### Wi-Fi Fingerprinting
 
 - Main Idea: Wi-Fi fingerprinting involves mapping and storing unique characteristics (or "fingerprints") of Wi-Fi signals at different locations to determine a device's location or context later.

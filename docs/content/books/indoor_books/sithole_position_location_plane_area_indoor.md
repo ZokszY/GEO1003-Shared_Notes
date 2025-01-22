@@ -7,19 +7,19 @@
 
 This paper looks at "how to model the dynamic interactions within indoor spaces, and specifically defining the elements that are required to model interactions within indoor spaces."
 
-* Part 1: reviews the notions of ‘Position’, ‘Location’, ‘Place’, and ‘Area’  
-* Part 2: explores how these notions translate in indoor environments  
+* Part 1: reviews the notions of ‘Position’, ‘Location’, ‘Place’, and ‘Area’
+* Part 2: explores how these notions translate in indoor environments
 * Part 3: proposes the inclusion of these notions into an indoor modelling framework (previously developed by the authors)
 
 ### Part 1 - Overview: position, location, place and area
 
 Three major approaches for representing spatial relationships:
 
-* **Metric**  
-* **Topology**: represents neighbourhood relationships between two objects, which allows the definition of inclusion (‘in’) and closeness (meet, or next to)  
-* **Directional**: require a specific frame of reference, namely  
+* **Metric**
+* **Topology**: represents neighbourhood relationships between two objects, which allows the definition of inclusion (‘in’) and closeness (meet, or next to)
+* **Directional**: require a specific frame of reference, namely
   * **Intrinsic**
-  * **Deictic**  
+  * **Deictic**
   * **Extrinsic**
   * **Euclidian**: makes directional relationships unambiguous
 
@@ -48,15 +48,15 @@ Aspects of addressing:
 
 Four concepts of placement:
 
-* **Position**  
-  * A Cartesian reference system is defined for a building, positions are defined relative to this system  
+* **Position**
+  * A Cartesian reference system is defined for a building, positions are defined relative to this system
   * Positions provide pin-point placements
-* **Location**  
+* **Location**
   * Location refers to the smallest physically defined space in a building
   * Location defines a general placement relative to well-defined physical space
-* **Place**  
+* **Place**
   * Place refers to a particular object and the uncertain (functional) space around it
-  * Place is used to indicate placements, which are within locations and have uncertain or dynamic limits  
+  * Place is used to indicate placements, which are within locations and have uncertain or dynamic limits
 * **Area**
   * Area defines a generalised space or sub-space, containing multiple addressable locations
 
@@ -64,12 +64,12 @@ Four concepts of placement:
 
 Conceptual framework is composed of:
 
-* **Agents**: entities that navigate space, access resources and perform activities  
-* **Resources**  
+* **Agents**: entities that navigate space, access resources and perform activities
+* **Resources**
 * **Space**: entirety of the enclosed environment to be navigated
-* **Sub-spaces**  
+* **Sub-spaces**
   * ***Inert spaces***: are inaccessible by agents
-  * ***Free spaces***:  
+  * ***Free spaces***:
     * Allow agents to move through them
     * Contain resources
     * Host activities

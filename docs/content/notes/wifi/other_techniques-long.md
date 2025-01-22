@@ -24,7 +24,7 @@ WiFi and Bluetooth radios (of devices) periodically send out messages, containin
 * WiFi Access Point and Bluetooth friendly name
 * Class of Device (CoD) (only when Bluetooth)
 
-![Meshlium Summary](../../../images/meshlium/meshlium_principle.png){width=500px}
+![Meshlium Summary](../../../images/meshlium/meshlium_principle.png){width="500"}
 
 **MAC address randomization**: for privacy randomized MAC address, reverts to **"factory" MAC address** when connected to WiFi
 

@@ -3,18 +3,15 @@
 ### Transformations and conversions
 
 The International Association of Oil and Gas Producers (EPSG) used a _de facto_ standard instead of an ISO standard. The EPSG collects all the different reference systems and their transformations. There are two different steps when working with 3D data. First, the coordinates need to be converted to a new coordinate system, after which the height values are transformed.
-![Map of coordinate conversion and datum transformation](../../../images/Transformations_and_conversions.png){width:"50%"}
+
+![Map of coordinate conversion and datum transformation](../../../images/Transformations_and_conversions.png){width="400"}
 
 Note, that a geoid is a stochastic height transformation and not a conversion. It uses in total 14 parameters:
 
 * 7 parameters;
-
-> 3 Translations \[m\];
- >
-> 3 Rotations \[“\];
- >
-> 1 Scale factor \[ppm\];
-
+  * 3 Translations \[m\];
+  * 3 Rotations \[“\];
+  * 1 Scale factor \[ppm\];
 * 7 rates and reference epoch (t0).
 
 These parameters can be given (by an official source), user-estimated (empirical) and/or conventional (by definition). A correction grid can be used as an alternative transformation or an additional conversion.
@@ -31,17 +28,15 @@ A big difference between datum transformations and coordinate conversions is tha
 When people in the field of Geomatics are talking about height, they can reference multiple different definitions of height:
 
 * **Geometric**: Ellipsoidal height (max. MSL deviation ±150m)
-
 * **Physical**: Height above the geoid ≈ Mean Sea Level (MSL)
 * **Relative**: Height above ground level (DTM)
 * **Water depth**: Lowest Astronomical Tide (LAT)
-![Physical heights in Geomatics](../../../images/Height_references.png){width:"50%"}
+
+![Physical heights in Geomatics](../../../images/Height_references.png){width="400"}
+
 There are multiple physical height standards depending on where you want to know the height:
 
 * **International Height Reference Systems** (IHRS) – No realisation yet
-
 * **European Vertical Reference System** (EVRS) – Realisations available, but not widely used yet (dm – cm)
-
 * **Earth Gravitation Model** (EGM84, 96, 2008, 2020) – By USA like WGS84 (m – dm)
-
 * National Height Systems – Based on local MSL

@@ -4,7 +4,7 @@ Aspects of addressing space:
 
 * **Reference**: relative (with reference to space or other objects) or absolute (agreed to by general consensus)
 * **Specificity** and **Uncertainty**: the extent of the addressable space
-* **Scope**: placement at different scales  
+* **Scope**: placement at different scales
 * **Context**: with or without context
 
 |  | Position | Location | Place | Area |
@@ -24,12 +24,12 @@ Four concepts of placement:
 
 Framework modelling indoor space composed of:
 
-* **Agents**: entities that navigate space, access resources and perform activities  
-* **Resources**  
+* **Agents**: entities that navigate space, access resources and perform activities
+* **Resources**
 * **Space**: entirety of the enclosed environment to be navigated
-* **Sub-spaces**  
+* **Sub-spaces**
   * ***Inert spaces***: inaccessible by agents
-  * ***Free spaces***:  
+  * ***Free spaces***:
     * Allow agents to move through them
     * Contain resources
     * Host activities

@@ -1,4 +1,4 @@
-## PPP-RTK
+## PPP & RTK
 
 ### Abbreviations
 

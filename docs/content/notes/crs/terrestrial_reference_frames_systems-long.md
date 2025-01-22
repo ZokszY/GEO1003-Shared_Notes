@@ -2,22 +2,19 @@
 
 In this chapter of the summary, we will highlight some examples of Coordinate Reference Systems and Frames:
 
-![Terrestrial Reference Systems](../../../images/GGRF.png){width:"50%"}
+![Terrestrial Reference Systems](../../../images/GGRF.png){width="300"}
 
 **ITRS: International Terrestrial Reference System** uses the GRS80 ellipsoid, with as its origin the centre of mass of the Earth. Greenwich (UK) is used as a meridian. When using time-dependent coordinates, you always need to specify the epoch (e.g. @2024.91).
 
 **ITRF: International Terrestrial Reference Frames** are realisations of the ITRS. They publish updates every ~1-6 years. Due to the movement of tectonic plates, the differences between each iteration can be multiple centimetres to decimetres. Two examples are ITRF2014 and ITRF2020 (NB: Frame != epoch, e.g. ITRF2014@2022.90). These updates reflect:
 
 * Improved precision of the station positions $r$($t$0) and velocities $r$ due to the availability of a longer period of observations, which is particularly important for the velocities,
-
 * Improved datum definition due to the availability of more observations and better models,
-
 * Discontinuities in the time series due to earthquakes and other geophysical events,
-
 * Newly added and discontinued stations,
-
 * Occasionally a new reference epoch $t$0.
-![Changes in ITRF2014](../../../images/Horizontal_velocity_field_ITRF2014.png){width:"50%"}
+
+![Changes in ITRF2014](../../../images/Horizontal_velocity_field_ITRF2014.png){width="450"}
 
 **WGS 84** is aligned with ITRS (WGS 84-G2296 (2024) = ITRF2020). For time-dependent coordinates, however, it has limited precision. The realisations (frames) often have differences between m – cm. The ensemble code (+- 2m): EPSG:4326 for 2D (often used as unknown latlon).
 

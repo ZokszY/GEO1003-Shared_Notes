@@ -15,7 +15,7 @@ More detailed information in the PPP-RTK Market and Technology Report, 2 \- Tech
 
 The carrier phase observation equation:
 
-![Carrier phase observation equation](../../../images/tiberius/image8.png){width=90%}
+![Carrier phase observation equation](../../../images/tiberius/image8.png){width="550"}
 
 with
 
@@ -27,7 +27,7 @@ with
 
 We use relative positioning and develop the model of observation equations for a short baseline. The two receivers being close together implies that the delays will be very similar, and in the sequel, we assume them to be really equal: **$ds_1 = ds_2$**. With the position coordinates of the reference or base station $(x_1, y_1, z_1)$ being known, and taking the difference of measurements across the two receivers, $\varphi^s_{1,2} = \varphi^s_2 − \varphi^s_1$, we obtain:
 
-![Combined errors of three satellites](../../../images/tiberius/image10.png){width=60%}
+![Combined errors of three satellites](../../../images/tiberius/image10.png){width="400"}
 
 $$\varphi_r^s = \lambda \frac{\Phi_r^s}{2\pi}$$
 
@@ -35,7 +35,7 @@ The goal of RTK positioning is to estimate the position coordinates of the rover
 
 In the above model, the receiver clock offset parameter $b_{1,2}$ appears equally in all equations and can be removed by **taking differences between measurements**.
 
-![Final carrier phase observation equation](../../../images/tiberius/image12.png){width=80%}
+![Final carrier phase observation equation](../../../images/tiberius/image12.png){width="550"}
 
 An adequate solution is provided by the LAMBDA method to slove multiple ambiguity parameters *N* present in the problem at the same time.
 
@@ -45,36 +45,36 @@ More detailed information in the PPP-RTK Market and Technology Report, 2 \- Tech
 
 ### 15.2 - Current developments
 
-**PPP-RTK:** More detailed information in the PPP-RTK Market and Technology Report  
+**PPP-RTK:** More detailed information in the PPP-RTK Market and Technology Report
 Bring high-accuracy positioning techniques, e.g. **RTK and PPP, to low-cost devices**:
 
 1. The smartphone retrieves DGPS corrections of a nearby reference station through NTRIP, and forwards these to the GPS receiver connected to the smartphone.
 2. The GPS receiver chip combines the corrections with the measurements of the rover receiver and delivers a centimetre-accurate RTK position solution, which it relays back to the app on the smartphone.
 3. This allows for centimetre-accurate navigation, in real-time, with smartphones.
 
-**Satellite Based Augmentation Systems (SBAS)**  
+**Satellite Based Augmentation Systems (SBAS)**
 E.g. the European EGNOS system. SBAS is a pseudorange code Differential GPS approach for large geographical areas(wide areas).
 
 * Design to enable GPS-based aircraft **precision approaches**.
-* Rely on the same principles as PPP.  
-* Focus on **integrity** rather than accuracy (integrity refers to the trust that can be placed in the resulting position solution, the solution is largely fault tolerant)  
+* Rely on the same principles as PPP.
+* Focus on **integrity** rather than accuracy (integrity refers to the trust that can be placed in the resulting position solution, the solution is largely fault tolerant)
 * The corrections are transmitted on the same radio frequency as GPS signals, so no additional data link is necessary.
 
 ### 15.3 - Processing strategies, dynamic model and observation period
 
-![Accuracy vs. Integration time for each method](../../../images/tiberius/image13.png){width=80%}
+![Accuracy vs. Integration time for each method](../../../images/tiberius/image13.png){width="400"}
 
 **Measurement Time and Accuracy**:
 
-* **Static Solution:** Longer measurement durations improve accuracy for stationary receivers by averaging observations. Position accuracy is shown as a function of the measurement duration in the figure above.  
+* **Static Solution:** Longer measurement durations improve accuracy for stationary receivers by averaging observations. Position accuracy is shown as a function of the measurement duration in the figure above.
 * **Kinematic Solution:** For moving receivers, dynamic models (e.g., constant velocity) help improve accuracy.
 
 **Realtime vs. Postprocessing**:
 
-* **Realtime:** Suitable for immediate results, slightly lower accuracy.  
+* **Realtime:** Suitable for immediate results, slightly lower accuracy.
 * **Postprocessing:** Higher accuracy but results are delayed.
 
 **Measurement Rate**:
 
-* **Higher Rates:** Improve precision slightly for dynamic scenarios but offer limited additional accuracy due to correlated errors.  
+* **Higher Rates:** Improve precision slightly for dynamic scenarios but offer limited additional accuracy due to correlated errors.
 * **Lower Rates:** Sufficient for slow-moving applications like tectonic monitoring.

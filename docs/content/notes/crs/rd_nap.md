@@ -3,7 +3,7 @@
 ### Coordinate Systems
 
 Official 3D coordinate system of the Netherlands and Europe: European Terrestrial Reference System 1989 (ETRS89).
-ETRS89 is linked to the International Terrestrial Reference System (ITRS) by a time-dependant coordinate transformation.  
+ETRS89 is linked to the International Terrestrial Reference System (ITRS) by a time-dependant coordinate transformation.
 National coordinate systems in Europe are linked to ETRS89.
 
 #### Rijksdriehoeksmeting (RD)
@@ -25,18 +25,18 @@ The recommended ETRS89 realisation is ETRF2000 at epoch 2010.50 (AGRS2010). When
 
 ![Figure 1.2.2](../../../images/Steps_transformation_procedure.png)
 
-There are two variants for the implementation of the horizontal component of RDNAPTRANS™2018 and two variants for the vertical component (Figure 1.2.2).  
+There are two variants for the implementation of the horizontal component of RDNAPTRANS™2018 and two variants for the vertical component (Figure 1.2.2).
 
-Implementation variant 1 applies the datum transformation as a separate step using a 3D similarity transformation.  
-The advantage of implementation variant 1 is that it has no strict bounds for the area where horizontal coordinates can be transformed correctly. The disadvantage is that many software packages do not support implementation variant 1 for the horizontal component.  
+Implementation variant 1 applies the datum transformation as a separate step using a 3D similarity transformation.
+The advantage of implementation variant 1 is that it has no strict bounds for the area where horizontal coordinates can be transformed correctly. The disadvantage is that many software packages do not support implementation variant 1 for the horizontal component.
 
-Implementation variant 2 includes the datum transformation in the correction grid and uses a different quasi-geoid grid for the height transformation. Implementation variant 2 for the horizontal component is supported by more software but can only be used within the bounds of the correction grid (Figure 1.1.1). The difference in the resulting coordinates between the two variants is well below 0.0010 m within the bounds of the RDNAPTRANS™2018 grids.  
+Implementation variant 2 includes the datum transformation in the correction grid and uses a different quasi-geoid grid for the height transformation. Implementation variant 2 for the horizontal component is supported by more software but can only be used within the bounds of the correction grid (Figure 1.1.1). The difference in the resulting coordinates between the two variants is well below 0.0010 m within the bounds of the RDNAPTRANS™2018 grids.
 
 ### Transformation from ETRS89 to RD and NAP: Steps
 
 1. Datum transformation
 
-   1.1 Conversion to geocentric Cartesian coordinates. Variant 1, The ellipsoidal geographic ETRS89 coordinates of a point of interest must be converted to geocentric Cartesian ETRS89 coordinates to be able to apply a 3D similarity transformation.  
+   1.1 Conversion to geocentric Cartesian coordinates. Variant 1, The ellipsoidal geographic ETRS89 coordinates of a point of interest must be converted to geocentric Cartesian ETRS89 coordinates to be able to apply a 3D similarity transformation.
    Variant 2, the datum transformation is included in the correction grid.
 
    1.2 3D similarity transformation
@@ -49,7 +49,7 @@ Implementation variant 2 includes the datum transformation in the correction gri
 
    2.2 To transform the point of interest, Determine nearest grid points
 
-   2.3 Iterative correction of the point of interest from pseudo Bessel coordinates to real Bessel coordinates,  
+   2.3 Iterative correction of the point of interest from pseudo Bessel coordinates to real Bessel coordinates,
 
    2.4 Datum transformation in the correction grid
 
@@ -81,11 +81,11 @@ Implementation variant 2 includes the datum transformation in the correction gri
 
 3. Datum transformation
 
-   3.1 Variant 1, transformation from ellipsoidal geographic Bessel coordinates of a point of interest to ellipsoidal geographic ETRS89 coordinates. Variant 2 the datum transformation is included in the correction grid  
+   3.1 Variant 1, transformation from ellipsoidal geographic Bessel coordinates of a point of interest to ellipsoidal geographic ETRS89 coordinates. Variant 2 the datum transformation is included in the correction grid
 
    3.2 the ellipsoidal geographic Bessel coordinates of a point of interest must be converted to geocentric Cartesian Bessel coordinates
 
-   3.3 The 3D similarity transformation must be applied to the geocentric Cartesian Bessel coordinates of the point of interest to obtain geocentric Cartesian ETRS89 coordinates.  
+   3.3 The 3D similarity transformation must be applied to the geocentric Cartesian Bessel coordinates of the point of interest to obtain geocentric Cartesian ETRS89 coordinates.
 
    3.4 The geocentric Cartesian ETRS89 coordinates of the point of interest must be converted back to ellipsoidal geographic ETRS89 coordinates. The latitude is computed iteratively.
 

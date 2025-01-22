@@ -8,12 +8,12 @@ $$
 
 with:
 
-* $t_{s}$: signal transmission time (from satellite s)  
+* $t_{s}$: signal transmission time (from satellite s)
 * $t_{r}$: time of signal arrival (determined by receiver clock)
 
 There are then two situations:
 
-* **Signal acquisition**: pseudo-range prediction unknown, receiver-generated spreading code searched until correlation peak is found  
+* **Signal acquisition**: pseudo-range prediction unknown, receiver-generated spreading code searched until correlation peak is found
 * **Signal tracking**: pseudo-range prediction known, only vary the receiver-generated code phase slightly
 
 Perceived carrier frequency varies due to: **Doppler effect** and **receiver clock drift**.

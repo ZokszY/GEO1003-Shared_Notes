@@ -90,7 +90,7 @@ nav:
       - Accuracy and Precision: "content/notes/gnss_performance/accuracy_precision.md"
       - Dilution of Precision: "content/notes/gnss_performance/dilution_of_precision.md"
       - Availability, Continuity and Integrity: "content/notes/gnss_performance/availability_continuity_integrity.md"
-      - PPP-RTK: "content/notes/gnss_performance/ppp_rtk.md"
+      - PPP & RTK: "content/notes/gnss_performance/ppp_rtk.md"
       - DGNSS: "content/notes/gnss_performance/dgnss.md"
     - GNSS in the built environment (outdoor, indoor and in between):
       - Multipath: "content/notes/gnss_built_environment/multipath.md"
@@ -128,7 +128,7 @@ nav:
       - Accuracy and Precision: "content/notes/gnss_performance/accuracy_precision-long.md"
       - Dilution of Precision: "content/notes/gnss_performance/dilution_of_precision-long.md"
       - Availability, Continuity and Integrity: "content/notes/gnss_performance/availability_continuity_integrity-long.md"
-      - PPP-RTK: "content/notes/gnss_performance/ppp_rtk-long.md"
+      - PPP & RTK: "content/notes/gnss_performance/ppp_rtk-long.md"
       - DGNSS: "content/notes/gnss_performance/dgnss-long.md"
     - GNSS in the built environment (outdoor, indoor and in between):
       - Multipath: "content/notes/gnss_built_environment/multipath-long.md"

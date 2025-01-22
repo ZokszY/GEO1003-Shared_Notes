@@ -5,7 +5,7 @@ The geometry of the visible satellites affects accuracy. Poor satellite geometry
 inaccuracy of computed position = DOP x Inaccuracy of range measurement
 
 If DOP is very high, the inaccuracy of the computed position will be much larger than the inaccuracy of the range measurement
-  
+
 Types of DOP:
 HDOP (Horizontal Dilution of Precision)
 VDOP (Vertical Dilution of Precision)

@@ -1,9 +1,11 @@
 title: "GEO1003 - Shared Notes"
 author: "Master Geomatics Students"
-date: "2024-12-07"
+date: "2025-01-22"
 lang: "en"
 fontsize: "12pt"
 documentclass: "scrartcl"
+toc: true
+toc-depth: 3
 geometry: a4paper, margin=0.75in, top=0.75in, bottom=0.75in, left=1in, right=1in
 header-includes:
   - \usepackage{hyperref}
