@@ -1,12 +1,5 @@
 ## Lecture 2 + 3： GNSS Code Code-Observation Positioning Performance for the built environment Part 1 + 2
 
-<style>
-img {
-    width: 300px;
-    height: 200px;
-}
-</style>
-
 
 ### Structure
 
@@ -86,6 +79,11 @@ Generally, The satellites send one-way signals to receiver. By measuring how lon
 - uere(user equivalent range error) 5.0m
 
 ### Position Determination and DOP and Time to First Fix
+
+#### Pseudorange Measurements
+![Pseudorange Measurements](../../../images/Pseudorange%20Measurements.png)
+![Coordinates Precision](../../../images/coordinateprecision.png)
+
 
 #### How to Determine Position?
 
