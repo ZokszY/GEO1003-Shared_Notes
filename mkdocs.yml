@@ -91,7 +91,7 @@ nav:
       - Dilution of Precision: "content/notes/gnss_performance/dilution_of_precision.md"
       - Availability, Continuity and Integrity: "content/notes/gnss_performance/availability_continuity_integrity.md"
       - PPP & RTK: "content/notes/gnss_performance/ppp_rtk.md"
-      - DGNSS: "content/notes/gnss_performance/dgnss.md"
+      - Differential GNSS (DGNSS): "content/notes/gnss_performance/dgnss.md"
     - GNSS in the built environment (outdoor, indoor and in between):
       - Multipath: "content/notes/gnss_built_environment/multipath.md"
       - Urban Canyon: "content/notes/gnss_built_environment/urban_canyon.md"
@@ -129,7 +129,7 @@ nav:
       - Dilution of Precision: "content/notes/gnss_performance/dilution_of_precision-long.md"
       - Availability, Continuity and Integrity: "content/notes/gnss_performance/availability_continuity_integrity-long.md"
       - PPP & RTK: "content/notes/gnss_performance/ppp_rtk-long.md"
-      - DGNSS: "content/notes/gnss_performance/dgnss-long.md"
+      - Differential GNSS (DGNSS): "content/notes/gnss_performance/dgnss-long.md"
     - GNSS in the built environment (outdoor, indoor and in between):
       - Multipath: "content/notes/gnss_built_environment/multipath-long.md"
       - Urban Canyon: "content/notes/gnss_built_environment/urban_canyon-long.md"
@@ -166,7 +166,7 @@ nav:
       - 2 - Basic GNSS concepts: "content/books/hexagon_intro_to_GNSS/2-Basic GNSS concepts.md"
       - 3 - GNSS constellations: "content/books/hexagon_intro_to_GNSS/3-GNSS constellations.md"
       - 4 - GNSS error sources: "content/books/hexagon_intro_to_GNSS/4-GNSS error sources.md"
-      - 5 - Resolving error: "content/books/hexagon_intro_to_GNSS/5-Resolving errors.md"
+      - 5 - Resolving errors: "content/books/hexagon_intro_to_GNSS/5-Resolving errors.md"
       - 6 - Sensor fusion: "content/books/hexagon_intro_to_GNSS/6-Sensor fusion.md"
       - 7 - GNSS threats: "content/books/hexagon_intro_to_GNSS/7-GNSS threats.md"
       - 8 - Autonomy: "content/books/hexagon_intro_to_GNSS/8-Autonomy.md"
