@@ -118,4 +118,4 @@ The choice depends on the application's needs and available infrastructure.
 
 ![PPP vs RTK vs PPP-RTK](../../../images/PPP-RTK-concept.png){ width="600" }
 
-![difference in message format and resolved errors](../../../images/message-format.png){ width="500" }
+![Difference in message format and resolved errors](../../../images/message-format.png){ width="500" }

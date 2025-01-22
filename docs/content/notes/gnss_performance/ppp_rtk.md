@@ -54,4 +54,4 @@
 | **Key Strengths**        | High accuracy, very fast convergence time                                   | Global coverage, no reliance on local base stations     | High accuracy, fast convergence time, global coverage, lower bandwidth requirements compared to RTK, graceful degradation outside CORS range |
 | **Key Limitations**      | Limited range, high bandwidth requirements, reliance on local base stations | Long convergence time, lower accuracy compared to RTK   | Still requires a CORS network (though less dense than RTK) and may degrade to standard PPP with increasing distance from CORS station        |
 
-![difference in message format and resolved errors](../../../images/message-format.png){ width="500" }
+![Difference in message format and resolved errors](../../../images/message-format.png){ width="500" }
