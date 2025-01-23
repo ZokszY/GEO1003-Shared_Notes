@@ -1,6 +1,7 @@
 ## Radio-based Localisation Techniques
 
 ### Received Signal Strength Indicator (RSSI)
+
 - RSS: actual signal power strength recorded by the receiver, in decibel-milliwatts (dBm) or milliWatts(mW)
   - Inverse proportionality between RSSI and transmitter-receiver distance
 - RSSI: RSS indicated in arbitrary units
@@ -13,11 +14,13 @@
   - Potentially high fluctuation over time
 
 ### Channel State Information (CSI)
+
 - Captures amplitude and phase response across different frequencies
 - Higher granularity than RSSI, gives more information to reduce multipath and provide more consistent measurements
 - Overall higher localisation accuracy than RSSI
 
 ### Fingerprinting/Scene Analysis
+
 - Discrete estimation of user location based on grid
   - Delicate balance between size of grid (and corresponding resolution), and the signal variation error
   - Eg: impossible to estimate the correct point if the difference in RSSI values between each grid cell is less than the uncertainty range of the signal strength
@@ -29,6 +32,7 @@
   - Support Vector Machine (SVM): machine learning method applicable to indoor localisation
 
 ### Angle of Arrival (AoA)
+
 - Receiver's antennae array estimates the angle of transmitted signal by the time difference of arrival at individual parts of the array
 - Advantages:
   - Receiver location can be estimated with just 3 transmitters in a 3D environment
@@ -39,6 +43,7 @@
   - Line of Sight for angle calculation is hard to obtain due to indoor multipath effects
 
 ### Time of Flight (ToF)
+
 - Calculate physical transmitter-receiver distance using signal propagation time and speed of light
 - Trilateration is used similar to RSSI to estimate position
 - Requires strict time synchronisation between transmitter and receiver, such that timestamps may also be included in the signal
@@ -48,6 +53,7 @@
   - Highly sensitive to obstacles as they deflect the signals, resulting in a longer propagation time
 
 ### Time Difference of Arrival (TDoA)
+
 - Create hyperbolas between each pair of transmitters
 - Intersection point of all hyperbolas represents the position estimate
   - Ie: solve the system of hyperbola equations for X,Y,Z
@@ -57,6 +63,7 @@
     - Synchronisation is thus only necessary between transmitters (receiver error is common between transmitter pairs)
 
 ### Return Time of Flight (RToF)
+
 - Measures the round-trip signal propagation time from transmitter to receiver, and response signal from receiver to transmitter
 - Difference between RToF and ToF
   - Only moderate synchronisation between transmitter and receiver is required
@@ -64,6 +71,7 @@
   - Time delay in transmitting response signal (depending on the receiver's electronics) adds to position estimation error
 
 ### Phase of Arrival (PoA)
+
 - Measures phase difference from transmission to reception
 - Typically used in conjunction with other methods (RSSI, ToF, TDoA) to enhance localisation accuracy
 - High accuracy is only achievable with direct line-of-sight
