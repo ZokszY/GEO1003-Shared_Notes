@@ -25,7 +25,7 @@
 
 #### Different Constellation System around the world
 
-- GPS 
+- GPS
 - Glonass
 - Galileo
 - Compass (Beidou)
@@ -40,19 +40,19 @@ Generally, The satellites send one-way signals to receiver. By measuring how lon
 **Three main segments**:
 
 1. Satellites (Space Segment):
-  - Each has a unique ID signal (PRN)
-  - Uses atomic clocks for precise timing
-  - Sends navigation data: time, orbit info, and position corrections
+   - Each has a unique ID signal (PRN)
+   - Uses atomic clocks for precise timing
+   - Sends navigation data: time, orbit info, and position corrections
 2. Ground Control:
-  - Fixed stations that monitor satellites
-  - Check and correct satellite positions and timing
-  - Send updates to satellites
+   - Fixed stations that monitor satellites
+   - Check and correct satellite positions and timing
+   - Send updates to satellites
 3. User Device (like your phone):
-  - Needs clear view of sky
-  - Starts empty but learns satellite positions
-  - Uses cheaper quartz clock
-  - Calculates position by comparing signal times from multiple satellites
-  - Your device figures out where you are by measuring how long signals take to arrive from different satellites. The more satellites it can see, the more accurate your position!
+   - Needs clear view of sky
+   - Starts empty but learns satellite positions
+   - Uses cheaper quartz clock
+   - Calculates position by comparing signal times from multiple satellites
+   - Your device figures out where you are by measuring how long signals take to arrive from different satellites. The more satellites it can see, the more accurate your position!
 
 ### GNSS Performance Parameters
 
@@ -61,12 +61,14 @@ Generally, The satellites send one-way signals to receiver. By measuring how lon
 3. Availability: The probability that enough satellites are visible and working properly to calculate your position when you need it
 4. Continuity: The probability that the system will continue to work without interruption during the entire length of your intended operation
 5. Integrity: Able to provide timely warning when it fails to meet its stated accuracy
-  - How to monitor integrity?
-    - ephemeris data: it contains precise satellite orbit info, and is onlt valid for max 4 hrs, so needs update regularly
-    - workflow:
-       1. control station reveives signals from satellite
-       2. control station sends corrected data to satellite
-       3. satellite broadcasts updated data to receiver 
+
+How to monitor integrity?
+
+- ephemeris data: it contains precise satellite orbit info, and is only valid for max 4 hrs, so needs update regularly
+- workflow:
+    1. control station reveives signals from satellite
+    2. control station sends corrected data to satellite
+    3. satellite broadcasts updated data to receiver
 
 #### Common error range
 
@@ -74,17 +76,23 @@ Generally, The satellites send one-way signals to receiver. By measuring how lon
 - ephemeris 2.0m
 - satellite clock 2.0m
 - multipath 1.0m
-- troposhpere 0.5m
-- uere(user equivalent range error) 5.0m
+- troposphere 0.5m
+- UERE (user equivalent range error) 5.0m
 
 ### Position Determination and DOP and Time to First Fix
+
+#### Pseudorange Measurements
+
+![Pseudorange Measurements](../../../images/Pseudorange%20Measurements.png){ width="400" }
+
+![Coordinates Precision](../../../images/coordinateprecision.png){ width="300" }
 
 #### How to Determine Position?
 
 1. How many unknown parameters?
-   - 3 coordinates (XYZ) (Cartesian coords) WGS84 or ($\lamda$, $\phi$, h) WGS84 (latitude, longtitude, elevation) (Geographic coords)
+   - 3 coordinates (XYZ) (Cartesian coords) WGS84 or ($\lambda$, $\phi$, h) WGS84 (latitude, longtitude, elevation) (Geographic coords)
    - clock bias: the time difference between the satellite precise atomic clock and receiver's quartz clock
-2. **Thus 4 satellites are needed! But more is beter!**
+2. **Thus 4 satellites are needed! But more is better!**
 
 #### DOP(Dilution of Precision)
 
@@ -93,7 +101,7 @@ The quality of satellite geometry and its effect on position accuracy:
 - Good DOP: satellites are spread across the sky
 - Bad DOP: satellites are clustered
 
-**DOP Types**
+**DOP Types**:
 
 1. GDOP: overall position + time
 2. PDOP: 3D position quality
@@ -107,18 +115,18 @@ The quality of satellite geometry and its effect on position accuracy:
 How long your GPS device takes to calculate its first position
 
 1. Cold Start: Slowest
-  - Device knows nothing
-  - Must search for all satellites from scratch
-  - Takes longest time
+   - Device knows nothing
+   - Must search for all satellites from scratch
+   - Takes longest time
 2. Warm Start: Medium
-  - Has some recent data
-  - Must get new ephemeris data
-  - Each satellite broadcasts every 30s
-  - Data valid for 4 hours
+   - Has some recent data
+   - Must get new ephemeris data
+   - Each satellite broadcasts every 30s
+   - Data valid for 4 hours
 3. Hot Start: Fastest
-  - Has all recent valid data
-  - Can quickly connect to satellites
-  - Most common in daily use
+   - Has all recent valid data
+   - Can quickly connect to satellites
+   - Most common in daily use
 
 QuickFIX/Assisted GPS is a technology to speed up this process, typically used in smartphones.
 
@@ -127,18 +135,18 @@ QuickFIX/Assisted GPS is a technology to speed up this process, typically used i
 #### Assisted GPS
 
 1. Mobile Station Based A-GPS:
-  - Device gets 3 things from network:
-    * Ephemeris data
-    * Reference position
-    * Reference time
-  - Gets pseudo-ranges from satellites
-  - Device calculates its own position
+   - Device gets 3 things from network:
+     - Ephemeris data
+     - Reference position
+     - Reference time
+   - Gets pseudo-ranges from satellites
+   - Device calculates its own position
 2. Mobile Station Assisted A-GPS:
-  - Device gets same data from network
-  - Also gets pseudo-ranges from satellites
-  - BUT device sends measurements to server
-  - Server calculates position
-  - Server may or may not send position back
+   - Device gets same data from network
+   - Also gets pseudo-ranges from satellites
+   - BUT device sends measurements to server
+   - Server calculates position
+   - Server may or may not send position back
 
 Main difference:
 
@@ -155,7 +163,7 @@ This is used in smartphones to:
 
 - Two stations used
 - Cancels out common errors between stations
-- Transmits corrections from reference to user for whom the line of sight is blocked 
+- Transmits corrections from reference to user for whom the line of sight is blocked
 - Can be provided by commercial service or public (more recent)
 
 #### Augmented GNSS
@@ -183,7 +191,8 @@ WADGPS:
 #### SSR: Precise Point Positioning(PPP)
 
 Uses a small network of reference stations worldwide (about 40). These stations track satellites and calculate error corrections. Can work even if nearest station is 1000+ km away
-1. regualr PPP: 2 frequencies, remove ionosphere delay, more accurate
+
+1. regular PPP: 2 frequencies, remove ionosphere delay, more accurate
 2. low cost PPP: 1 frequency, model to predict ionosphere effects, less accurate but cheaper.
 Main advantageL don't need a nearby base station, get accuracy over the world, simpler that other high accuracy GPS methods
 
@@ -211,15 +220,15 @@ Main advantageL don't need a nearby base station, get accuracy over the world, s
 - Worldwide coverage  
 - Requires direct line of sight of min 4 satellites  
 - Increases number of available satellites at best possible angle
-- 
+
 **Conclusions from a research article**:
 
-1.Coverage of GPS alone
-  - Not sufficient within street lanes
-  - Sufficient on street crossings – where to decide which direction
-  - Appropriate for lots of outdoor LBS applications 
+1. Coverage of GPS alone
+   - Not sufficient within street lanes
+   - Sufficient on street crossings – where to decide which direction
+   - Appropriate for lots of outdoor LBS applications
 2. Combination of GPS and Galileo
-  - 27 Galileo + 24 GPS + EGNOS
-  - Availability almost 100% during day
-  - Accuracy 2 – 5 meters
-  - Appropriate for almost all outdoor LBS applications
+   - 27 Galileo + 24 GPS + EGNOS
+   - Availability almost 100% during day
+   - Accuracy 2 – 5 meters
+   - Appropriate for almost all outdoor LBS applications

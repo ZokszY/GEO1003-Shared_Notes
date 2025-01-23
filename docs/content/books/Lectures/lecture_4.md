@@ -1,5 +1,6 @@
 ## Lecture 4: Network RTK, GNSS Augmentation, GNSS Modernization (GUEST LECTURE)
 
+
 ### Structure
 
 - Company Info (not covered)
