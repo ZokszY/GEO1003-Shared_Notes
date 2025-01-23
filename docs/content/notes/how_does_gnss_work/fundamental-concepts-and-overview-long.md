@@ -1,10 +1,10 @@
 ## Introduction
 
-Notes from the chapter Introduction of Principles of GNSS, Inertial, and Miltisensor Integrated Navigation Systems - Paul D. Groves
+Notes from the chapter Introduction of the book "Principles of GNSS, Inertial, and Miltisensor Integrated Navigation Systems" - Paul D. Groves
 
 ### 1.1 Fundamental Concepts
 
-**Navigation** involves two main concepts: determining the position and velocity of a moving body relative to a reference point, and planning a course to move from one place to another while avoiding obstacles. **Positioning** is a subset of navigation, focusing solely on determining position.
+**Navigation** involves two main concepts: determining the position and velocity of a moving body relative to a reference point, and planning a course to move from one place to another while avoiding obstacles. **Positioning** is the determination of the position of a body and is thus a subset of navigation.
 
 Positioning techniques can be categorized into:
 
@@ -14,7 +14,7 @@ Positioning techniques can be categorized into:
 
 3. **Self-positioning vs. Remote Positioning:** Most navigation applications use self-positioning, where the object calculates its position. Remote positioning involves calculating the position elsewhere without the object’s cooperation.
 
-A **navigation system** determines position and velocity automatically, while a **positioning system** only determines position. An **integrated navigation system** uses multiple technologies for both position and velocity.
+A **navigation system** is a device that determines position and velocity automatically. Similarly, a positioning system determines position. An integrated navigation system determines position and velocity using more than one technology.
 
 **Navigation sensors** like accelerometers and gyroscopes measure properties to compute outputs, and the **navigation solution** provides position, velocity, and sometimes additional data like heading or acceleration. Depending on the application, this can be 2D (for cars, trains, etc.) or 3D (for air, space, underwater, or indoor navigation).
 
@@ -26,7 +26,7 @@ Some authors use the term **localization** instead of positioning, particularly 
 
 Positioning and navigation techniques rely on two fundamental methods:
 
-- **Position Fixing:** Uses external information like radio signals or environmental features (e.g., landmarks, terrain) to determine position. A navigation aid (AtoN) is a landmark used specifically for navigation.
+- **Position Fixing:** Uses external information like signals (radio, acoustic, ultrasound, optical, or infrared) or environmental features (e.g., landmarks, terrain, signs, roads, rivers, terrainheight, sounds, smells, and even variations in the magnetic and gravitational fields) to determine position. A navigation aid (AtoN) is a landmark used specifically for navigation.
 
 - **Dead Reckoning:** Measures distance and direction traveled using a self-contained system, like an INS, without relying on external infrastructure. Environmental features can also assist dead reckoning by comparing repeated measurements.
 
