@@ -14,7 +14,7 @@ Maintaining reference points for ETRS89 and the transformation to RD coordinates
 
 The **Stelsel van de Rijksdriehoeksmeting (RD)** was created using triangulation from church spires and stone markers (historical). It has no time dependence; the differences are <1cm since 2000. It uses one EPSG-code (EPSG:28992 (RD New) for 2D and EPSG:7415 for compound CRS with NAP). The RD projection has its origin in Amersfoort in the middle of the Netherlands, it uses conformal stereographic projection (angles are preserved) and the north of the map is not equal to the true north. Unlike what you might think, the highest accuracy is not in Amersfoort itself, but rather in a circle ~100km around it.
 
-![RDNAP diagram](../../../images/RDNAP.png)
+![RDNAP diagram](../../../images/RDNAP.png){ width="600" }
 
 To prevent confusion between the x-coordinates and y-coordinates, and to obtain always positive coordinates, the origin of the coordinates was shifted 155 km to the West and 463 km to the South (**False Easting and Northing**). This resulted in only positive x- and y-coordinates, where the y-coordinates are always larger than the x-coordinates.
 
@@ -30,15 +30,15 @@ For parts of the Noordzee however, the NAP cannot be used. Instead, they use the
 The official coordinate transformation between European ETRS89 coordinates and Dutch coordinates in RD and NAP is called RDNAPTRANS™.
 It uses a Datum transformation and a correction grid (see fig.) in combination with the map projection to transform the values. The height of the transformation is determined by a quasi-geoid.
 
-![NTv2 transformation procedure used by RDNAPTRANS™2018](../../../images/RDNAPTRANS.png)
+![NTv2 transformation procedure used by RDNAPTRANS™2018](../../../images/RDNAPTRANS.png){ width="600" }
 
 Below are the errors of the RDNAPTRANS:
 
-![Errors of RDNAPTRANS™](../../../images/RDNAPTRANS_errors.png)
+![Errors of RDNAPTRANS™](../../../images/RDNAPTRANS_errors.png){ width="300" }
 
 The recommended ETRS89 realisation is ETRF2000 at epoch 2010.50 (AGRS2010). When using RDNAPTRANS™2018 it is important to use this realisation and epoch, especially for the height. For applications demanding high accuracy, it is recommended to obtain the NAP height of the point of interest by levelling to nearby NAP benchmarks.
 
-![Figure 1.2.2](../../../images/Steps_transformation_procedure.png)
+![Figure 1.2.2](../../../images/Steps_transformation_procedure.png){ width="600" }
 
 There are two variants for the implementation of the horizontal component of RDNAPTRANS™2018 and two variants for the vertical component (figure called Figure 1.2.2).
 

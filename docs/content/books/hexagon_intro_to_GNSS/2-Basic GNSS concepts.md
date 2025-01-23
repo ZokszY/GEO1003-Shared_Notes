@@ -2,7 +2,7 @@
 
 > pages 11-26 of Hexagon intro to GNSS
 
-![Basic GNSS](../../../images/screenshots%20Hexagon%20book/Basic%20GNSS.png)
+![Basic GNSS](../../../images/screenshots%20Hexagon%20book/Basic%20GNSS.png){ width="500" }
 
 ### STEP 1 - SATELLITES
 
@@ -16,10 +16,10 @@
 - GNSS orbits are more or less circular, highly stable and predictable.
 - Wind does not affect satellites, but gravitational effects and the pressure of solar radiation  do affect GNSS orbits a bit, and the orbits need to be occasionally corrected (while it is being adjusted, satellite’s status is changed to “out of service”, so user equipment knows not to use the affected signals)
 
-![GPS frequency plan](../../../images/screenshots%20Hexagon%20book/GPS%20frequency%20plan.png)
+![GPS frequency plan](../../../images/screenshots%20Hexagon%20book/GPS%20frequency%20plan.png){ width="500" }
 
 - Frequency plans (plans that describe the frequency, amplitude and bandwidth of signals) are a little different for each GNSS system
-- GPS uses a transmission scheme CDMA (Code Division Multiple Access,  a spread spectrum method (meaning the signal is deliberately spread in the frequency domain resulting in a signal with a wider bandwidth)
+- GPS uses a transmission scheme CDMA (Code Division Multiple Access, a spread spectrum method (meaning the signal is deliberately spread in the frequency domain resulting in a signal with a wider bandwidth))
 - Satellite transmits signals on the same frequency, modulated with unique pseudo random codes (PRN) codes
 - Receivers correlate with specific satellite signals using theses codes, even at low power levels
 - CDMA is like understanding conversations in different languages in a noisy room
@@ -35,7 +35,7 @@
   - Satellite ephemeris data -> allows the receiver to calculate the satellite’s position
   - Almanac data contains info and status of all GPS satellites, so receivers know which satellites are available for tracking. Almanac consists of coarse orbit and status information for each satellite in the constellation
 
-![GPS navigation message](../../../images/screenshots%20Hexagon%20book/GPS%20navigation%20message.png)
+![GPS navigation message](../../../images/screenshots%20Hexagon%20book/GPS%20navigation%20message.png){ width="500" }
 
 #### GPS transmission scheme is chosen for many good reasons
 
@@ -60,7 +60,7 @@ Earth stations monitor and adjust GNSS satellites’ time and orbit for accuracy
 
 ### STEP 2 - PROPAGATION
 
-![GNSS signal propagation](../../../images/screenshots%20Hexagon%20book/GNSS%20signal%20propagation.png)
+![GNSS signal propagation](../../../images/screenshots%20Hexagon%20book/GNSS%20signal%20propagation.png){ width="400" }
 
 - In short: GNSS satellites regularly broadcast their ephemerides and time, as well as their status. GNSS radio signals pass through layers of the atmosphere to the user equipment.
 - GNSS signal travel from satellites to receivers, passing through the atmosphere
@@ -74,13 +74,13 @@ Earth stations monitor and adjust GNSS satellites’ time and orbit for accuracy
 
 ### STEP 3 - RECEPTION
 
-![GNSS reception](../../../images/screenshots%20Hexagon%20book/GNSS%20reception.png)
+![GNSS reception](../../../images/screenshots%20Hexagon%20book/GNSS%20reception.png){ width="500" }
 
 - In short: GNSS user equipment receives the signals from multiple GNSS satellites and, for each satellite, recovers the information that was transmitted and determines the time of propagation (the time it takes the signals to travel from the satellite to the receiver).
 - Receivers need at least four satellites to obtain a position. More satellites improve accuracy, but the receiver’s computational power may limit its ability to use additional signals
 - The receiver tracks signals using PRN codes, which allow it to calculate the time of propagation by comparing the received signal with the satellite’s transmission time
 
-![Determining time of propagation](../../../images/screenshots%20Hexagon%20book/Determining%20time%20of%20propagation.png)
+![Determining time of propagation](../../../images/screenshots%20Hexagon%20book/Determining%20time%20of%20propagation.png){ width="500" }
 
 - Antenna selection is crucial for optimal GNSS performance and must match the receiver’s capabilities and the intended application
 
@@ -92,7 +92,7 @@ Earth stations monitor and adjust GNSS satellites’ time and orbit for accuracy
 - Antenna beamwidth & gain roll-off: describes how gain changes with the elevation angle, affecting performance at different satellite positions
 - Phase centre stability: the electrical phase center can shift, affecting accuracy. High precision applications require antennas with minimal phase center variations
 
-![Plot of good and poor antenna phase centre variation over elevation angle](../../../images/screenshots%20Hexagon%20book/Plot%20of%20good%20and%20poor%20antenna%20phase%20centre%20variation%20over%20elevation%20angle.png)
+![Plot of good and poor antenna phase centre variation over elevation angle](../../../images/screenshots%20Hexagon%20book/Plot%20of%20good%20and%20poor%20antenna%20phase%20centre%20variation%20over%20elevation%20angle.png){ width="400" }
 
 - Application: the antenna must meet the performance, environmental and mechanical needs of the specific application, such as aviation or surveying
 
@@ -105,21 +105,21 @@ Earth stations monitor and adjust GNSS satellites’ time and orbit for accuracy
 - Trilateration = method of geometrically determining the position of an object in a manner similar to triangulation, the receiver calculates its position.
 - In 2D, the receiver calculates its range to satellite A, placing it on a circle around that satellite. Adding a second satellite places the receiver at one of two intersections. A third satellite is needed to resolve the exact position.
 
-![Ranging to first satellite](../../../images/screenshots%20Hexagon%20book/Ranging%20to%20first%20satellite.png)
+![Ranging to first satellite](../../../images/screenshots%20Hexagon%20book/Ranging%20to%20first%20satellite.png){ width="300" }
 
-![Ranging to second satellite](../../../images/screenshots%20Hexagon%20book/Ranging%20to%20second%20satellite.png)
+![Ranging to second satellite](../../../images/screenshots%20Hexagon%20book/Ranging%20to%20second%20satellite.png){ width="500" }
 
 - We do need four ranges instead of three. It turns out that receiver clocks are not nearly as accurate as the clock onboard the satellites. When we determine the range of two satellites, our computed position will be out by an amount proportional to the inaccuracy in our receiver clock.
 
-![Position error](../../../images/screenshots%20Hexagon%20book/Position%20error.png)
+![Position error](../../../images/screenshots%20Hexagon%20book/Position%20error.png){ width="350" }
 
 - The receiver time inaccuracy causes range errors that result in position errors. The receiver knows there is an error: it just doesn’t know the size of the error. If we now compute the range to a third satellite, it doesn’t intersect the computed position
 
-![Detecting position error](../../../images/screenshots%20Hexagon%20book/Detecting%20position%20error.png)
+![Detecting position error](../../../images/screenshots%20Hexagon%20book/Detecting%20position%20error.png){ width="350" }
 
 - The receiver knows the reason the pseudoranges to the the three satellites are not intersecting is because its clock is not very good. The receiver is programmed to advance or delay its clock until the pseudoranges ot the three satellites converge at a single point
 
-![Convergence](../../../images/screenshots%20Hexagon%20book/Convergence.png)
+![Convergence](../../../images/screenshots%20Hexagon%20book/Convergence.png){ width="250" }
 
 - The incredible accuracy of the satellite clock has been “transferred” to the receiver clock, greatly reducing the receiver clock error in the position determination.
 
@@ -135,9 +135,9 @@ Various errors affect the accuracy of GNSS positioning, such as atmospheric dela
 
 - If DOP is very high, the inaccuracy of the computed position will be much larger than the inaccuracy of the range measurement
 
-![Dilution of precision (poor satellite geometry)](../../../images/screenshots%20Hexagon%20book/Dilution%20of%20precision%20%28poor%20satellite%20geometry%29.png)
+![Dilution of precision (poor satellite geometry)](../../../images/screenshots%20Hexagon%20book/Dilution%20of%20precision%20%28poor%20satellite%20geometry%29.png){ width="450" }
 
-![Dilution of precision (improved geometry)](../../../images/screenshots%20Hexagon%20book/Dilution%20of%20precision%20%28improved%20geometry%29.png)
+![Dilution of precision (improved geometry)](../../../images/screenshots%20Hexagon%20book/Dilution%20of%20precision%20%28improved%20geometry%29.png){ width="450" }
 
 Types of DOP:
 

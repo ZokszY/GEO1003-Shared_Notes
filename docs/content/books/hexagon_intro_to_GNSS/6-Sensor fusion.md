@@ -2,7 +2,7 @@
 
 > pages 61-66 of Hexagon intro to GNSS
 
-![sensor_fusion.png](../../../images/sensor_fusion.png)
+![Sensor fusion](../../../images/sensor_fusion.png){ width="250" }
 
 This chapter describes the fusion of different sensors together with GNSS to provide more accurate positioning.
 

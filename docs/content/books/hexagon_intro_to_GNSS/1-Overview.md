@@ -2,7 +2,7 @@
 
 > pages 3-10 of Hexagon intro to GNSS
 
-![GNSS segments](../../../images/screenshots%20Hexagon%20book/GNSS%20segments.png)
+![GNSS segments](../../../images/screenshots%20Hexagon%20book/GNSS%20segments.png){ width="500" }
 
 GNSS (Global Navigation Satellite System) = collection of satellite positioning systems, called “constellations,” from various countries that are in operation or planned.
 
@@ -21,7 +21,7 @@ Consists of GNSS satellites orbiting (far away, 19-36.000 km above Earth).
 Each GNSS has its own constellation of satellites, arranged in orbits to provide the desired coverage.
 Each satellite in a GNSS constellation broadcasts a signal identifying itself and providing its precise time, orbit location and system health status.
 
-![GNSS satellite orbits](../../../images/screenshots%20Hexagon%20book/GNSS%20satellite%20orbits.png)
+![GNSS satellite orbits](../../../images/screenshots%20Hexagon%20book/GNSS%20satellite%20orbits.png){ width="300" }
 
 ### Control segment
 
@@ -44,7 +44,7 @@ Weakness: by the time GNSS signals reach the ground, they are very weak
 
 Based on a process called “trilateration” - determining position by measuring distances from three known points.
 
-![trilateration](../../../images/screenshots%20Hexagon%20book/trilateration.png)
+![trilateration](../../../images/screenshots%20Hexagon%20book/trilateration.png){ width="300" }
 
 With a third distance, you can only be in one physical location.
 Extension to satellites: replaces physical reference points with satellites to calculate precise locations.
@@ -56,7 +56,7 @@ GNSS provides precise time synchronization for power grids, cellular systems, th
 
 ### GNSS user equipment - components
 
-![GNSS user equipment](../../../images/screenshots%20Hexagon%20book/GNSS%20user%20equipment.png)
+![GNSS user equipment](../../../images/screenshots%20Hexagon%20book/GNSS%20user%20equipment.png){ width="400" }
 
 GNSS antennas: Receive satellite signals; designs vary depending on applications (e.g. base stations, UAVs).
 GNSS receivers: process signals recovered by the antenna to calculate position and time; available in various configurations for different needs.

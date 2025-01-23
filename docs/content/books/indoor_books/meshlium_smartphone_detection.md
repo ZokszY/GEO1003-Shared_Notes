@@ -21,10 +21,10 @@ Coverage area:
 
 Vehicle Traffic Detection can be used for:
 
-* Vehicle Traffic Monitoring \- flow and congestion of vehicular traffic, flow of pedestrians
-  ![Traffic Monitoring](../../../images/Traffic_monitoring.png)
-* Calculating the average speed of vehicles that transit over a roadway (by taking time marks at two different points)
-  ![Vehicle Speed Calculation](../../../images/Vehicle_speed_calculation.png)
+* Vehicle Traffic Monitoring \- flow and congestion of vehicular traffic, flow of pedestrians  
+  ![Traffic Monitoring](../../../images/Traffic_monitoring.png){ width="500" }
+* Calculating the average speed of vehicles that transit over a roadway (by taking time marks at two different points)  
+  ![Vehicle Speed Calculation](../../../images/Vehicle_speed_calculation.png){ width="500" }
 
 ### Devices detected
 
@@ -39,7 +39,8 @@ Antennas:
 * Meshilum kit comes with **omnidirectional antenna**
 * **Directional antennas**: extend the range of WiFi and Bluetooth scanning in the required direction in around 40°
 * **Sector antennas**: a type of directional antenna categorized by its azimuth plane width, commonly available with 60°, 90°, and 120°
-  ![Antenna Types](../../../images/Antennas_types.png)
+
+![Antenna Types](../../../images/Antennas_types.png){ width="450" }
 
 Minimizing interference:
 

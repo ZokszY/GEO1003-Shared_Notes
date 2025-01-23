@@ -6,7 +6,7 @@ This chapter will explore some of the technologies behind Autonomous Vehicles (A
 
 The level of automation is usually ranked on a scale of 0 (entirely human) to 5 (entirely autonomous).
 
-![Levels of automation.png](../../../images/Levels%20of%20automation.png)
+![Levels of automation](../../../images/Levels%20of%20automation.png){ width="500" }
 
 AV's rely on a combination of many sensors:
 

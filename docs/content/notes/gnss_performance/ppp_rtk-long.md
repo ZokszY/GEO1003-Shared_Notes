@@ -92,14 +92,14 @@ PPP-RTK is a hybrid GNSS signal augmentation technology that combines the streng
 **Overall, PPP-RTK offers a promising solution for mass-market applications by providing high accuracy, fast convergence, global coverage, and efficient bandwidth usage.**  
 It bridges the gap between traditional PPP and RTK, offering a more versatile and scalable approach to high-accuracy positioning.
 
-#### **Exhibit 7: High-Level View of Main Benefits and Drawbacks of PPP-RTK Compared to PPP and RTK Only**
+#### Exhibit 7: High-Level View of Main Benefits and Drawbacks of PPP-RTK Compared to PPP and RTK Only
 
 ![PPP vs RTK](../../../images/PPP-vs-RTK.png){ width="500" }
 
 ### Comparing RTK, PPP, and PPP-RTK
 
 | Feature                  | RTK                                                                         | PPP                                                     | PPP-RTK                                                                                                                                      |
-| :----------------------- | :-------------------------------------------------------------------------- | :------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------- |
+| :-------------- | :--------------------- | :-------------------- | :------------------------------ |
 | **Accuracy**             | **cm-level** (up to 1 cm + 1 ppm)                                           | **dm-level or better** (less than 10 cm)                | **cm-level**, similar to RTK                                                                                                                 |
 | **Coverage Area**        | **Limited range** (typically 30-50 km from the base station)                | **Global**                                              | **Global** with graceful degradation to standard PPP outside the range of the CORS network                                                   |
 | **Message Format**       | **OSR** (Observation Space Representation)                                  | **SSR** (State Space Representation)                    | **SSR** (State Space Representation)                                                                                                         |
@@ -118,4 +118,4 @@ The choice depends on the application's needs and available infrastructure.
 
 ![PPP vs RTK vs PPP-RTK](../../../images/PPP-RTK-concept.png){ width="600" }
 
-![difference in message format and resolved errors](../../../images/message-format.png){ width="500" }
+![Difference in message format and resolved errors](../../../images/message-format.png){ width="500" }

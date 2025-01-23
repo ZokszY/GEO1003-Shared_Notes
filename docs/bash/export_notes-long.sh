@@ -47,15 +47,17 @@ while IFS= read -r filename || [[ -n "$filename" ]]; do
         # Check if the file was automatically generated
         first_line=$(head -n 1 "$filename_long")
         if [[ "$first_line" == "<!--AUTOMATICALLY GENERATED" ]]; then
-            mod_date=$(git log -1 --format="%ai" -- "$filename")
-            mod_date_long=$(git log -1 --format="%ai" -- "$filename_long")
-            # Check if the source file is newer
-            if [[ "$mod_date" > "$mod_date_long" ]]; then
-                write_long=true
-                echo "Source file '$filename' is newer. Updating '$filename_long'..."
-            else
-                echo "Source file '$filename' is older. No need to update '$filename_long'."
-            fi
+            # mod_date=$(git log -1 --format="%ai" -- "$filename")
+            # mod_date_long=$(git log -1 --format="%ai" -- "$filename_long")
+            # # Check if the source file is newer
+            # if [[ "$mod_date" > "$mod_date_long" ]]; then
+            #     write_long=true
+            #     echo "Source file '$filename' is newer. Updating '$filename_long'..."
+            # else
+            #     echo "Source file '$filename' is older. No need to update '$filename_long'."
+            # fi
+            write_long=true
+            echo "Updating '$filename_long' from '$filename'..."
         fi
     fi
 
@@ -92,7 +94,7 @@ done <"$input_file"
 
 # Run Pandoc with the modified list of files
 mkdir -p pdf
-pandoc --from=markdown+rebase_relative_paths -s -o pdf/notes-long.pdf --metadata-file=metadata.yaml --number-sections --pdf-engine=pdflatex $(cat "$temp_file")
+pandoc --from=markdown+rebase_relative_paths -s -o pdf/notes-long.pdf --lua-filter=add_date.lua --metadata-file=metadata.yaml --number-sections --pdf-engine=pdflatex $(cat "$temp_file")
 
 # Clean up the temporary file
 rm "$temp_file"

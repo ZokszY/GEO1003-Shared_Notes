@@ -23,7 +23,7 @@ The official coordinate transformation between European ETRS89 coordinates and D
 
 The recommended ETRS89 realisation is ETRF2000 at epoch 2010.50 (AGRS2010). When using RDNAPTRANS™2018 it is important to use this realisation and epoch, especially for the height. For applications demanding high accuracy, it is recommended to obtain the NAP height of the point of interest by levelling to nearby NAP benchmarks.
 
-![Figure 1.2.2](../../../images/Steps_transformation_procedure.png)
+![Figure 1.2.2](../../../images/Steps_transformation_procedure.png){ width="500" }
 
 There are two variants for the implementation of the horizontal component of RDNAPTRANS™2018 and two variants for the vertical component (Figure 1.2.2).
 
