@@ -45,7 +45,7 @@ GNSS receivers **ignore signals** from below a certain elevation, making them pr
 
 **GNSS augmentation systems** supply differential corrections and integrity alerts that meet the needs of safety-critical applications. There are two types:
 
-| Criteria | **Space-based augmentation systems (SBAS)** | **Ground-based augmentation systems (GBAS)** |
+| **Criteria** | **Space-based augmentation systems (SBAS)** | **Ground-based augmentation systems (GBAS)** |
 |----------|----------------------------------------|----------------------------------------|
 | *Coverage* | Large country or small continent | Local area (e.g. an airfield) |
 | *Broadcast* | Geostationary satellites | Ground-based transmitters |

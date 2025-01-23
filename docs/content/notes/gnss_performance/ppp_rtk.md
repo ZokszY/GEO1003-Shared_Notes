@@ -44,7 +44,7 @@
 ### Comparing RTK, PPP, and PPP-RTK
 
 | Feature                  | RTK                                                                         | PPP                                                     | PPP-RTK                                                                                                                                      |
-| :----------------------- | :-------------------------------------------------------------------------- | :------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------- |
+| :-------------- | :--------------------- | :-------------------- | :------------------------------ |
 | **Accuracy**             | **cm-level** (up to 1 cm + 1 ppm)                                           | **dm-level or better** (less than 10 cm)                | **cm-level**, similar to RTK                                                                                                                 |
 | **Coverage Area**        | **Limited range** (typically 30-50 km from the base station)                | **Global**                                              | **Global** with graceful degradation to standard PPP outside the range of the CORS network                                                   |
 | **Message Format**       | **OSR** (Observation Space Representation)                                  | **SSR** (State Space Representation)                    | **SSR** (State Space Representation)                                                                                                         |

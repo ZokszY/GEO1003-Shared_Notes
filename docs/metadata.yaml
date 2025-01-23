@@ -1,6 +1,5 @@
 title: "GEO1003 - Shared Notes"
 author: "Master Geomatics Students"
-date: "2025-01-22"
 lang: "en"
 fontsize: "12pt"
 documentclass: "scrartcl"
@@ -15,5 +14,7 @@ header-includes:
   - \fancyhf{}
   - \fancyhead[L]{GEO1003 - Shared Notes}
   - \fancyhead[R]{\thepage}
+  - \newcommand{\chapterbreak}{\clearpage} 
+  - \pretocmd{\section}{\chapterbreak}{}{} 
   - \DeclareUnicodeCharacter{2260}{\ensuremath{\neq}}
   - \DeclareUnicodeCharacter{2248}{\ensuremath{\approx}}
