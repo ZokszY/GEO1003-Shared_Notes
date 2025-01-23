@@ -104,7 +104,7 @@ nav:
       - RDNAP: "content/notes/crs/rd_nap.md"
     - Wi-Fi-monitoring / Fingerprinting:
       - Wi-Fi-Based Approaches: "content/notes/wifi/approaches.md"
-      - Radio Signal Based Techniques: "content/notes/wifi/radio_based.md"
+      - Radio-based Localisation Techniques: "content/notes/wifi/radio_based.md"
       - Hybrid and Other Techniques: "content/notes/wifi/other_techniques.md"
       - Performance Metrics: "content/notes/wifi/performance_metrics.md"
     - Location awareness and privacy:
@@ -142,7 +142,7 @@ nav:
       - RDNAP: "content/notes/crs/rd_nap-long.md"
     - Wi-Fi-monitoring / Fingerprinting:
       - Wi-Fi-Based Approaches: "content/notes/wifi/approaches-long.md"
-      - Radio Signal Based Techniques: "content/notes/wifi/radio_based-long.md"
+      - Radio-based Localisation Techniques: "content/notes/wifi/radio_based-long.md"
       - Hybrid and Other Techniques: "content/notes/wifi/other_techniques-long.md"
       - Performance Metrics: "content/notes/wifi/performance_metrics-long.md"
     - Location awareness and privacy:

@@ -132,4 +132,4 @@ Using RFID scanners for indoor locations implies either having permanent active 
 | Bluetooth                                     |  100m  | High throughput <br>High coverage range<br>Low power consumption          | Low accuracy<br>Sensitive to noise                                                      |
 | Ultrasound                                    |  <20m  | Less absorption from obstacles                                            | High dependence on sensor placement                                                     |
 | Acoustics                                     |   <2m  | High accuracy                                                             | Niche applications<br>Sensitive to sound pollution<br>Additional hardware/anchor points |
-| Visible Light (LEDs)                          |  1.4km | Widely available<br>High potential (with AoA technique)<br>Multipath-free | Requires Line-of-Sight<br>Higher power consumption  
+| Visible Light (LEDs)                          |  1.4km | Widely available<br>High potential (with AoA technique)<br>Multipath-free | Requires Line-of-Sight<br>Higher power consumption                                      |
