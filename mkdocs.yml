@@ -102,6 +102,7 @@ nav:
       - Datum and Transformations: "content/notes/crs/datum_transformations.md"
       - Map Projections: "content/notes/crs/map_projections.md"
       - RDNAP: "content/notes/crs/rd_nap.md"
+      - Unknown Title: "content/notes/indoor_localisation/zafari_2019.md"
     - Wi-Fi-monitoring / Fingerprinting:
       - Wi-Fi-Based Approaches: "content/notes/wifi/approaches.md"
       - Radio Signal Based Techniques: "content/notes/wifi/radio_based.md"
@@ -140,6 +141,7 @@ nav:
       - Datum and Transformations: "content/notes/crs/datum_transformations-long.md"
       - Map Projections: "content/notes/crs/map_projections-long.md"
       - RDNAP: "content/notes/crs/rd_nap-long.md"
+      - Unknown Title: "content/notes/indoor_localisation/zafari_2019-long.md"
     - Wi-Fi-monitoring / Fingerprinting:
       - Wi-Fi-Based Approaches: "content/notes/wifi/approaches-long.md"
       - Radio Signal Based Techniques: "content/notes/wifi/radio_based-long.md"
