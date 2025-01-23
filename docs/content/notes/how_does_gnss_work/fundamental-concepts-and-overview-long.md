@@ -107,8 +107,7 @@ Position Fixing with Bearings:
 
 - Landmark Identification:  
 
-Signals are identified via demodulation, transmitter IDs, or frequency. Environmental features are matched with stored data, requiring distinctive features and approximate position inputs to limit the size of database that must
-be searched to obtain a match. Even so, positioning using environmental features is normally more processor intensive than signal-based positioning.
+Signals are identified via demodulation, transmitter IDs, or frequency. Environmental features are matched with stored data, requiring distinctive features and approximate position inputs to limit the size of database that must be searched to obtain a match. Even so, positioning using environmental features is normally more processor intensive than signal-based positioning.
 
 - **Pattern Matching:**
 
