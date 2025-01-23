@@ -102,7 +102,6 @@ nav:
       - Datum and Transformations: "content/notes/crs/datum_transformations.md"
       - Map Projections: "content/notes/crs/map_projections.md"
       - RDNAP: "content/notes/crs/rd_nap.md"
-      - Unknown Title: "content/notes/indoor_localisation/zafari_2019.md"
     - Wi-Fi-monitoring / Fingerprinting:
       - Wi-Fi-Based Approaches: "content/notes/wifi/approaches.md"
       - Radio Signal Based Techniques: "content/notes/wifi/radio_based.md"
@@ -141,7 +140,6 @@ nav:
       - Datum and Transformations: "content/notes/crs/datum_transformations-long.md"
       - Map Projections: "content/notes/crs/map_projections-long.md"
       - RDNAP: "content/notes/crs/rd_nap-long.md"
-      - Unknown Title: "content/notes/indoor_localisation/zafari_2019-long.md"
     - Wi-Fi-monitoring / Fingerprinting:
       - Wi-Fi-Based Approaches: "content/notes/wifi/approaches-long.md"
       - Radio Signal Based Techniques: "content/notes/wifi/radio_based-long.md"
@@ -187,6 +185,9 @@ nav:
       - Meshlium Technical Guide - Smartphone Detection: "content/books/indoor_books/meshlium_smartphone_detection.md"
       - Position Location Place and Area - An Indoor Perspective: "content/books/indoor_books/sithole_position_location_plane_area_indoor.md"
       - Indoor Fingerprint Positioning Based on Wi-Fi - An Overview: "content/books/indoor_books/shixiong_xia_indoor_fingerprinting.md"
+      - Visual Place Recognition <br>: "content/books/indoor_books/lowry_visual_place_recognition.md"
+      - Indoor Positioning Technologies: "content/books/indoor_books/mautz_indoor_positioning_technologies.md"
+      - Localisation Techniques: "content/books/indoor_books/zafari_indoor_localisation_2019.md"
     - Articles about Privacy:
       - Location Data and Privacy: "content/books/privacy_books/gambino_location_data_and_privacy.md"
       - Personal Data, Non-personal Data, Anonymised Data, Pseudonymised Data, De-identified Data: "content/books/privacy_books/irti_personal_data_etc.md"
