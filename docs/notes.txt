@@ -24,6 +24,7 @@ content/notes/crs/terrestrial_reference_frames_systems.md
 content/notes/crs/datum_transformations.md
 content/notes/crs/map_projections.md
 content/notes/crs/rd_nap.md
+content/notes/indoor_localisation/zafari_2019.md
 content/notes/wifi/title.md
 content/notes/wifi/approaches.md
 content/notes/wifi/radio_based.md
