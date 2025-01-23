@@ -48,30 +48,6 @@ Performance:
 - The main drawbacks are that the position solution must be initialized and the position error grows with time because the errors in successive distance and direction measurements accumulate.
 - In an integrated navigation system, position-fixing measurements may be used to correct the dead-reckoning navigation solution and also calibrate the dead-reckoning sensor errors.
 
-### Position Fixing Methods
-
-Position fixing methods include:
-
-- Proximity: Position is inferred from nearby landmarks.
-- Ranging: Measures distances to landmarks, creating circular lines of position.
-- Bearing: Measures angles between the user and landmarks.
-- Pattern Matching: Compares environmental data with stored databases.
-- Doppler Positioning: Measures Doppler shift to calculate position.
-
-Other systems
-
-- Barometric Altimeter: Estimates height or depth using pressure measurements.
-- Radar Altimeter: Measures height above terrain, used in aircraft with known terrain height.
-- Data and Databases: Rely on data like landmarks and patterns, requiring updates and large storage.
-- SLAM: Enables systems to build and update landmark databases through exploration and dead reckoning.
-
-Signal-Based Positioning includes:
-
-- Satellite Navigation (GNSS, e.g., GPS), providing global positioning with high accuracy but vulnerable to interference.
-- Terrestrial Systems: Radio signals for long-range or short-range positioning.
-- Signal of Opportunity: Uses existing signals (e.g., mobile phone or broadcast signals).
-- Acoustic, Ultrasound, and Optical Signals: Used for underwater or short-range positioning.
-
 ### Position Fixing
 
 #### Position-Fixing Methods
@@ -171,7 +147,7 @@ Overall, GNSS provides superior accuracy and global reach, while terrestrial and
 
 ![alt text](../../../images/rangeandaccuracy.png)
 
-#### 1.3.3 Environmental Feature Matching
+#### Environmental Feature Matching
 
 - Natural Navigation: Humans and animals navigate using environmental features, often comparing them with maps, memory, or written directions.
 - Static or Predictable Features: Features used for navigation must be either stationary or predictable in their movement.
