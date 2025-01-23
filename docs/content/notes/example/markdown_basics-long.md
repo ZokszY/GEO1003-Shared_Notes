@@ -201,3 +201,43 @@ Block math:
 $$
 \int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
 $$
+
+### Definition Blocks
+
+```markdown
+**Lorem ipsum dolor sit amet**
+:   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
+    tellus non sem sollicitudin, quis rutrum leo facilisis.
+
+**Cras arcu libero**
+:   Aliquam metus eros, pretium sed nulla venenatis, faucibus auctor ex. Proin
+    ut eros sed sapien ullamcorper consequat. Nunc ligula ante.
+```
+
+**Lorem ipsum dolor sit amet**
+:   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
+    tellus non sem sollicitudin, quis rutrum leo facilisis.
+
+**Cras arcu libero**
+:   Aliquam metus eros, pretium sed nulla venenatis, faucibus auctor ex. Proin
+    ut eros sed sapien ullamcorper consequat. Nunc ligula ante.
+
+### Definition Blocks + Lists
+
+```markdown
+- **Lorem ipsum dolor sit amet**
+  :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
+      tellus non sem sollicitudin, quis rutrum leo facilisis.
+
+- **Cras arcu libero**
+  :   Aliquam metus eros, pretium sed nulla venenatis, faucibus auctor ex. Proin
+      ut eros sed sapien ullamcorper consequat. Nunc ligula ante.
+```
+
+- **Lorem ipsum dolor sit amet**
+  :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
+      tellus non sem sollicitudin, quis rutrum leo facilisis.
+
+- **Cras arcu libero**
+  :   Aliquam metus eros, pretium sed nulla venenatis, faucibus auctor ex. Proin
+      ut eros sed sapien ullamcorper consequat. Nunc ligula ante.

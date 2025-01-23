@@ -1,7 +1,5 @@
 ## Datum and Transformations
 
-### Datums
+### Transformations and conversions
 
-### Transformations
-
-### Conversions
+## Datums

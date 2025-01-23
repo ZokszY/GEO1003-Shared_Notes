@@ -107,7 +107,7 @@ nav:
       - Coordinate Systems: "content/notes/crs/coordinate_systems.md"
       - Terrestrial Reference Systems and Frames: "content/notes/crs/terrestrial_reference_frames_systems.md"
       - Datum and Transformations: "content/notes/crs/datum_transformations.md"
-      - Map Projection: "content/notes/crs/map_projections.md"
+      - Map Projections: "content/notes/crs/map_projections.md"
       - RDNAP: "content/notes/crs/rd_nap.md"
     - Wi-Fi-monitoring / Fingerprinting:
       - Introduction: "content/notes/wifi/intro.md"
@@ -152,7 +152,7 @@ nav:
       - Coordinate Systems: "content/notes/crs/coordinate_systems-long.md"
       - Terrestrial Reference Systems and Frames: "content/notes/crs/terrestrial_reference_frames_systems-long.md"
       - Datum and Transformations: "content/notes/crs/datum_transformations-long.md"
-      - Map Projection: "content/notes/crs/map_projections-long.md"
+      - Map Projections: "content/notes/crs/map_projections-long.md"
       - RDNAP: "content/notes/crs/rd_nap-long.md"
     - Wi-Fi-monitoring / Fingerprinting:
       - Introduction: "content/notes/wifi/intro-long.md"
@@ -176,12 +176,12 @@ nav:
     - Indoor Fingerprint Positioning Based on Wi-Fi - An Overview:
       - 1 - Introduction: "content/books/shixiong_xia/notes.md"
     - Hexagon - Intro to GNSS:
-      - Unknown Title: "content/books/hexagon_intro_to_GNSS/1-Overview.md"
-      - Unknown Title: "content/books/hexagon_intro_to_GNSS/2-Basic GNSS concepts.md"
-      - Unknown Title: "content/books/hexagon_intro_to_GNSS/3-GNSS constellations.md"
-      - Unknown Title: "content/books/hexagon_intro_to_GNSS/4-GNSS error sources.md"
-      - Unknown Title: "content/books/hexagon_intro_to_GNSS/5-Resolving errors.md"
-      - Unknown Title: "content/books/hexagon_intro_to_GNSS/6-Sensor fusion.md"
+      - 1 - Overview: "content/books/hexagon_intro_to_GNSS/1-Overview.md"
+      - 2 - Basic GNSS concepts: "content/books/hexagon_intro_to_GNSS/2-Basic GNSS concepts.md"
+      - 3 - GNSS constellations: "content/books/hexagon_intro_to_GNSS/3-GNSS constellations.md"
+      - 4 - GNSS error sources: "content/books/hexagon_intro_to_GNSS/4-GNSS error sources.md"
+      - 5 - Resolving error: "content/books/hexagon_intro_to_GNSS/5-Resolving errors.md"
+      - 6 - Sensor fusion: "content/books/hexagon_intro_to_GNSS/6-Sensor fusion.md"
       - 7 - GNSS threats: "content/books/hexagon_intro_to_GNSS/7-GNSS threats.md"
       - 8 - Autonomy: "content/books/hexagon_intro_to_GNSS/8-Autonomy.md"
       - 9 - GNSS applications and equipment: "content/books/hexagon_intro_to_GNSS/9-GNSS applications and equipment.md"
@@ -191,3 +191,6 @@ nav:
       - 4 - Competitive Landscape: "content/books/ppp-rtk_market_and_technology_report/4_competitive_landscape.md"
       - 5 - Relevant Standardisation: "content/books/ppp-rtk_market_and_technology_report/5_relevant_standardization.md"
       - 6 - Conclusion: "content/books/ppp-rtk_market_and_technology_report/6_conclusion.md"
+    - Articles about Indoor Positioning:
+      - Meshlium Technical Guide - Smartphone Detection: "content/books/indoor_books/meshlium_smartphone_detection.md"
+      - Position Location Place and Area - An Indoor Perspective: "content/books/indoor_books/sithole_position_location_plane_area_indoor.md"

@@ -1,9 +1,6 @@
 ## Coordinate Systems
+### Coordinate Reference Systems
+### Geographic Coordinate Reference Systems
+### Projected Coordinate Reference Systems
+### Linear Reference Systems
 
-### Ellipsoids
-
-### Geocentric Coordinate Systems
-
-### Topocentric Coordinate Systems
-
-### Coordinate Reference Systems (CRS)
