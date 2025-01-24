@@ -15,10 +15,6 @@ content/notes/gnss_performance/dilution_of_precision.md
 content/notes/gnss_performance/availability_continuity_integrity.md
 content/notes/gnss_performance/ppp_rtk.md
 content/notes/gnss_performance/dgnss.md
-content/notes/gnss_built_environment/title.md
-content/notes/gnss_built_environment/multipath.md
-content/notes/gnss_built_environment/urban_canyon.md
-content/notes/gnss_built_environment/shadow_matching.md
 content/notes/crs/title.md
 content/notes/crs/coordinate_systems.md
 content/notes/crs/terrestrial_reference_frames_systems.md
