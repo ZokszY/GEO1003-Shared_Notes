@@ -8,6 +8,10 @@ For RDNAPTRANS the context of question set is actually not that important, so yo
 
     Explain the oblique stereographic double projection
 
+=== "No idea?"
+
+    Change tab to see an answer.
+
 === "Answer"
 
     It is used to simplify the projection process and maintain conformality. 
@@ -20,6 +24,10 @@ For RDNAPTRANS the context of question set is actually not that important, so yo
 
     Describe the historical realization of the RD system
 
+=== "No idea?"
+
+    Change tab to see an answer.
+
 === "Answer"
 
     To ensure that all surveyors in the Netherlands can work in RD, the Department of National Triangulation of the Land Registry maintains reference points throughout the European Netherlands of which they have determined the RD coordinates. The location of approximately 5,500 of these so-called RD points has been accurately determined using triangulation. For the most part, these are the tops of church towers that are only suitable as a reference point. Since 1987, relative GPS measurements have also been used and some 400 so-called GPS core network points have been created that are suitable for setting up surveying GNSS equipment. The ETRS89 coordinates and the NAP height of these points have also been determined in relation to continuously active GNSS reference stations.
@@ -29,6 +37,10 @@ For RDNAPTRANS the context of question set is actually not that important, so yo
 !!! question
 
     Explain the false easting and false northing in the RD system
+
+=== "No idea?"
+
+    Change tab to see an answer.
 
 === "Answer"
 
@@ -42,6 +54,10 @@ For RDNAPTRANS the context of question set is actually not that important, so yo
 !!! question
 
     Describe the coordinate operations in the RDNAPTRANS procedure, distinguishing between datum transformations and coordinate conversions
+
+=== "No idea?"
+
+    Change tab to see an answer.
 
 === "Answer"
 
@@ -67,6 +83,10 @@ For RDNAPTRANS the context of question set is actually not that important, so yo
 
     What is the purpose of the RD-correction grid in the RDNAPTRANS procedure?
 
+=== "No idea?"
+
+    Change tab to see an answer.
+
 === "Answer"
 
     Due to the error propagation of measurement noise of the original (1888–1928) measurements of RD, the pseudo-Bessel coordinates must be corrected up to 0.25 m to obtain real Bessel coordinates using the correction grid.
@@ -76,6 +96,10 @@ For RDNAPTRANS the context of question set is actually not that important, so yo
 !!! question
 
     What are the improvements of applying the NTv2 procedure?
+
+=== "No idea?"
+
+    Change tab to see an answer.
 
 === "Answer"
 
@@ -91,6 +115,10 @@ For RDNAPTRANS the context of question set is actually not that important, so yo
 
     What is an advantage of the new definition of the geoid for the Netherlands?
 
+=== "No idea?"
+
+    Change tab to see an answer.
+
 === "Answer"
 
     Improved Height Accuracy: The new geoid model (NLGEO2018) reduces errors in height transformations, making it more reliable for applications like:
@@ -103,6 +131,10 @@ For RDNAPTRANS the context of question set is actually not that important, so yo
 !!! question
 
     What is an advantage of the larger coverage of the RDNAPTRANS procedure?
+
+=== "No idea?"
+
+    Change tab to see an answer.
 
 === "Answer"
 
@@ -119,6 +151,10 @@ For RDNAPTRANS the context of question set is actually not that important, so yo
 
     What causes the correction grid in RDNAPTRANS, and what are the implications of not using it?
 
+=== "No idea?"
+
+    Change tab to see an answer.
+
 === "Answer"
 
     Cause:  
@@ -133,6 +169,10 @@ For RDNAPTRANS the context of question set is actually not that important, so yo
 
     What are the disadvantages of sticking to the Dutch Rijksdriehoeksstelsel as the default reference system?
 
+=== "No idea?"
+
+    Change tab to see an answer.
+
 === "Answer"
 
     - International Incompatibility: RD is a national system and not directly compatible with international systems like ETRS89 or WGS 84. This hinders data sharing and integration across borders.
@@ -145,6 +185,10 @@ In 2013 the Dutch Kadaster started a project to investigate the pros and cons (f
 !!! question
 
     What are the arguments for and against transitioning to ETRS89-based storage and analysis?
+
+=== "No idea?"
+
+    Change tab to see an answer.
 
 === "Answer"
 
@@ -169,12 +213,16 @@ The survey company ‘Geomaat’ claims they should use the so-called RDNAPTRANS
     The possibility to obtain the required cm-accuracy of a height profile by GPS measurements.  
     The geoid in relation to levelled (orthometric) NAP-height and GPS (ellipsoidal) height.
 
+=== "No idea?"
+
+    Change tab to see an answer.
+
 === "Answer"
 
     Agree.  
     With the help of technologies like RTK or PPP_RTK, it's highly possible that we get a cm-dm accuracy.  
 
-    To transform between ellipsoidal ETRS89 heights and NAP heights, a quasi-geoid model, specifically NLGEO2018 is used.    
+    To transform between ellipsoidal ETRS89 heights and NAP heights, a quasi-geoid model, specifically NLGEO2018 is used.  
     - NAP is a physical height system, where heights are measured relative to the geoid.  
     - GPS/GNSS, on the other hand, provides ellipsoidal heights.  
 
@@ -187,6 +235,10 @@ The survey company ‘Geomaat’ claims they should use the so-called RDNAPTRANS
 
     How did the GPS base network help study systematic errors in the RD system?
 
+=== "No idea?"
+
+    Change tab to see an answer.
+
 === "Answer"
 
     GPS base network provided highly accurate ETRS89 coordinates across the country. By comparing the RD coordinates of points with their ETRS89 coordinates (derived from GPS), systematic errors in the RD system could be identified, including:
@@ -198,6 +250,10 @@ The survey company ‘Geomaat’ claims they should use the so-called RDNAPTRANS
 !!! question
 
     Why were systematic errors in the RD system not a problem before GPS?
+
+=== "No idea?"
+
+    Change tab to see an answer.
 
 === "Answer"
 
@@ -218,6 +274,10 @@ The survey company ‘Geomaat’ claims they should use the so-called RDNAPTRANS
 
     One could argue that first order levelling campaigns to maintain the NAP (Normal Amsterdams Peil) are obsolete because GPS/GNSS could replace these kind of measurements. Give two reasons why this change in measuring method had not taken place.
 
+=== "No idea?"
+
+    Change tab to see an answer.
+
 === "Answer"
 
     Two key reasons:  
@@ -230,6 +290,10 @@ The survey company ‘Geomaat’ claims they should use the so-called RDNAPTRANS
 !!! question
 
     Map projections can be grouped in three classes (besides the miscellaneous projections) depending on the nature of the projection surface. Name these three main groups, and state (include figures) the main properties.
+
+=== "No idea?"
+
+    Change tab to see an answer.
 
 === "Answer"
 
@@ -257,6 +321,10 @@ Discuss why the conformal Mercator projection (See Figure 2) badly distort area,
 
     What is the purpose of the Mercator projection in navigation?
 
+=== "No idea?"
+
+    Change tab to see an answer.
+
 === "Answer"
 
     - The projection preserves local angles, making it ideal for determining directions accurately.
@@ -267,6 +335,10 @@ Discuss why the conformal Mercator projection (See Figure 2) badly distort area,
 !!! question
 
     Why does Greenland appear as large as Africa on Mercator Projection Maps?
+
+=== "No idea?"
+
+    Change tab to see an answer.
 
 === "Answer"
 
@@ -280,6 +352,10 @@ Discuss why the conformal Mercator projection (See Figure 2) badly distort area,
 !!! question
 
     Why are Mercator projection maps typically cut between 85°S and 85°N?
+
+=== "No idea?"
+
+    Change tab to see an answer.
 
 === "Answer"
 
