@@ -1,5 +1,16 @@
 ## PPP & RTK
 
+### Abbreviations
+
+- **SV**: space vehicles or orbiting space vehicles
+- **RTK**: Real-Time Kinematic
+- **PPP**: Precise Point Positioning
+- **PPP-RTK**: Hybrid of PPP and RTK
+- **CORS**: Continuously Operating Reference Station
+- **NRTK**: Network RTK
+- **OSR**: Observation State Representation
+- **SSR**: State Space Representation
+
 ### PPP
 
 Precise Point Positioning (PPP) is a GNSS signal augmentation technique that offers high accuracy positioning using a single receiver. The errors which PPP corrected:

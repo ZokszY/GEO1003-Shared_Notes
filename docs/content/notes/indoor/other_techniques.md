@@ -18,10 +18,6 @@ WiFi and Bluetooth radios (of devices) periodically send out messages, containin
 
 **Adaptive Frequency Hopping (AFH)**: algorithm that enables Bluetooth radio to dynamically identify channels already in use and avoid them
 
-### Trilateration
-
-### Inertial Navigation Systems (INS)
-
 ### Visual Based Indoor Localisation
 
 * Image processing module: interpret visual data
@@ -72,5 +68,3 @@ WiFi and Bluetooth radios (of devices) periodically send out messages, containin
   * Multiple representations of the same environment: to capture cyclic/regular changes in environment
     * Eg: seasonal changes are cyclic
     * Store information of the same place (or whole-map level) at different instances of the required timescale
-
-### Isovists
