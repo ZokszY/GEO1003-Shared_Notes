@@ -85,6 +85,7 @@ nav:
       - Pseudorange Measurement: "content/notes/how_does_gnss_work/pseudorange.md"
       - Carrier Phase Measurement: "content/notes/how_does_gnss_work/carrier_phase.md"
       - Jamming and Spoofing: "content/notes/how_does_gnss_work/jamming_spoofing.md"
+      - Fundamental Concepts and Overview: "content/notes/how_does_gnss_work/fundamental-concepts-and-overview.md"
     - GNSS performance:
       - Error Sources: "content/notes/gnss_performance/error_sources.md"
       - Accuracy and Precision: "content/notes/gnss_performance/accuracy_precision.md"
@@ -123,6 +124,7 @@ nav:
       - Pseudorange Measurement: "content/notes/how_does_gnss_work/pseudorange-long.md"
       - Carrier Phase Measurement: "content/notes/how_does_gnss_work/carrier_phase-long.md"
       - Jamming and Spoofing: "content/notes/how_does_gnss_work/jamming_spoofing-long.md"
+      - Fundamental Concepts and Overview: "content/notes/how_does_gnss_work/fundamental-concepts-and-overview-long.md"
     - GNSS performance:
       - Error Sources: "content/notes/gnss_performance/error_sources-long.md"
       - Accuracy and Precision: "content/notes/gnss_performance/accuracy_precision-long.md"
