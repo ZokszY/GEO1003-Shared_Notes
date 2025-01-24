@@ -79,13 +79,13 @@ nav:
     - Introduction: "content/notes/intro.md"
     - How does GNSS work?:
       - Introduction: "content/notes/how_does_gnss_work/intro.md"
+      - Fundamental Concepts and Overview: "content/notes/how_does_gnss_work/fundamental-concepts-and-overview.md"
       - GPS segments: "content/notes/how_does_gnss_work/segments.md"
       - Radio Signal: "content/notes/how_does_gnss_work/signal.md"
       - Initialisation: "content/notes/how_does_gnss_work/initialisation.md"
       - Pseudorange Measurement: "content/notes/how_does_gnss_work/pseudorange.md"
       - Carrier Phase Measurement: "content/notes/how_does_gnss_work/carrier_phase.md"
       - Jamming and Spoofing: "content/notes/how_does_gnss_work/jamming_spoofing.md"
-      - Fundamental Concepts and Overview: "content/notes/how_does_gnss_work/fundamental-concepts-and-overview.md"
     - GNSS performance:
       - Error Sources: "content/notes/gnss_performance/error_sources.md"
       - Accuracy and Precision: "content/notes/gnss_performance/accuracy_precision.md"
@@ -93,38 +93,33 @@ nav:
       - Availability, Continuity and Integrity: "content/notes/gnss_performance/availability_continuity_integrity.md"
       - PPP & RTK: "content/notes/gnss_performance/ppp_rtk.md"
       - Differential GNSS (DGNSS): "content/notes/gnss_performance/dgnss.md"
-    - GNSS in the built environment (outdoor, indoor and in between):
-      - Multipath: "content/notes/gnss_built_environment/multipath.md"
-      - Urban Canyon: "content/notes/gnss_built_environment/urban_canyon.md"
-      - Shadow Matching: "content/notes/gnss_built_environment/shadow_matching.md"
     - CRS:
       - Coordinate Systems: "content/notes/crs/coordinate_systems.md"
       - Terrestrial Reference Systems and Frames: "content/notes/crs/terrestrial_reference_frames_systems.md"
       - Datum and Transformations: "content/notes/crs/datum_transformations.md"
       - Map Projections: "content/notes/crs/map_projections.md"
       - RDNAP: "content/notes/crs/rd_nap.md"
-    - Wi-Fi-monitoring / Fingerprinting:
-      - Wi-Fi-Based Approaches: "content/notes/wifi/approaches.md"
-      - Radio-based Localisation Techniques: "content/notes/wifi/radio_based.md"
-      - Hybrid and Other Techniques: "content/notes/wifi/other_techniques.md"
-      - Performance Metrics: "content/notes/wifi/performance_metrics.md"
+    - Indoor Positioning:
+      - Spaces: "content/notes/indoor/spaces.md"
+      - Wi-Fi-Based Approaches: "content/notes/indoor/approaches.md"
+      - Radio-based Localisation Techniques: "content/notes/indoor/radio_based.md"
+      - Hybrid and Other Techniques: "content/notes/indoor/other_techniques.md"
+      - IndoorGML: "content/notes/indoor/indoorgml.md"
     - Location awareness and privacy:
       - Position, Location, Place and Area: "content/notes/privacy/position_location_place_area.md"
       - Personal Data Protection in the European Union: "content/notes/privacy/european_data.md"
-      - Spaces: "content/notes/privacy/spaces.md"
-      - IndoorGML: "content/notes/privacy/indoorgml.md"
     - PDF version: "pdf/notes.pdf"
   - Long notes:
     - Introduction: "content/notes/intro-long.md"
     - How does GNSS work?:
       - Introduction: "content/notes/how_does_gnss_work/intro-long.md"
+      - Fundamental Concepts and Overview: "content/notes/how_does_gnss_work/fundamental-concepts-and-overview-long.md"
       - GPS segments: "content/notes/how_does_gnss_work/segments-long.md"
       - Radio Signal: "content/notes/how_does_gnss_work/signal-long.md"
       - Initialisation: "content/notes/how_does_gnss_work/initialisation-long.md"
       - Pseudorange Measurement: "content/notes/how_does_gnss_work/pseudorange-long.md"
       - Carrier Phase Measurement: "content/notes/how_does_gnss_work/carrier_phase-long.md"
       - Jamming and Spoofing: "content/notes/how_does_gnss_work/jamming_spoofing-long.md"
-      - Fundamental Concepts and Overview: "content/notes/how_does_gnss_work/fundamental-concepts-and-overview-long.md"
     - GNSS performance:
       - Error Sources: "content/notes/gnss_performance/error_sources-long.md"
       - Accuracy and Precision: "content/notes/gnss_performance/accuracy_precision-long.md"
@@ -132,26 +127,21 @@ nav:
       - Availability, Continuity and Integrity: "content/notes/gnss_performance/availability_continuity_integrity-long.md"
       - PPP & RTK: "content/notes/gnss_performance/ppp_rtk-long.md"
       - Differential GNSS (DGNSS): "content/notes/gnss_performance/dgnss-long.md"
-    - GNSS in the built environment (outdoor, indoor and in between):
-      - Multipath: "content/notes/gnss_built_environment/multipath-long.md"
-      - Urban Canyon: "content/notes/gnss_built_environment/urban_canyon-long.md"
-      - Shadow Matching: "content/notes/gnss_built_environment/shadow_matching-long.md"
     - CRS:
       - Coordinate Systems: "content/notes/crs/coordinate_systems-long.md"
       - Terrestrial Reference Systems and Frames: "content/notes/crs/terrestrial_reference_frames_systems-long.md"
       - Datum and Transformations: "content/notes/crs/datum_transformations-long.md"
       - Map Projections: "content/notes/crs/map_projections-long.md"
       - RDNAP: "content/notes/crs/rd_nap-long.md"
-    - Wi-Fi-monitoring / Fingerprinting:
-      - Wi-Fi-Based Approaches: "content/notes/wifi/approaches-long.md"
-      - Radio-based Localisation Techniques: "content/notes/wifi/radio_based-long.md"
-      - Hybrid and Other Techniques: "content/notes/wifi/other_techniques-long.md"
-      - Performance Metrics: "content/notes/wifi/performance_metrics-long.md"
+    - Indoor Positioning:
+      - Spaces: "content/notes/indoor/spaces-long.md"
+      - Wi-Fi-Based Approaches: "content/notes/indoor/approaches-long.md"
+      - Radio-based Localisation Techniques: "content/notes/indoor/radio_based-long.md"
+      - Hybrid and Other Techniques: "content/notes/indoor/other_techniques-long.md"
+      - IndoorGML: "content/notes/indoor/indoorgml-long.md"
     - Location awareness and privacy:
       - Position, Location, Place and Area: "content/notes/privacy/position_location_place_area-long.md"
       - Personal Data Protection in the European Union: "content/notes/privacy/european_data-long.md"
-      - Spaces: "content/notes/privacy/spaces-long.md"
-      - IndoorGML: "content/notes/privacy/indoorgml-long.md"
     - PDF version: "pdf/notes-long.pdf"
   - Exams overview: content/exams_overview.md
   - Books notes:
@@ -190,6 +180,7 @@ nav:
       - Visual Place Recognition <br>: "content/books/indoor_books/lowry_visual_place_recognition.md"
       - Indoor Positioning Technologies: "content/books/indoor_books/mautz_indoor_positioning_technologies.md"
       - Localisation Techniques: "content/books/indoor_books/zafari_indoor_localisation_2019.md"
+      - Indoor GML - A Standard Approach for Indoor Maps: "content/books/indoor_books/OGC_IndoorGML.md"
     - Articles about Privacy:
       - Location Data and Privacy: "content/books/privacy_books/gambino_location_data_and_privacy.md"
       - Personal Data, Non-personal Data, Anonymised Data, Pseudonymised Data, De-identified Data: "content/books/privacy_books/irti_personal_data_etc.md"
