@@ -1,4 +1,4 @@
-## Lecture 2 + 3： GNSS Code Code-Observation Positioning Performance for the built environment Part 1 + 2
+## Lecture 2 + 3 - GNSS Code Code-Observation Positioning Performance for the built environment Part 1 + 2
 
 ### Structure
 
