@@ -186,5 +186,5 @@ nav:
       - Personal Data, Non-personal Data, Anonymised Data, Pseudonymised Data, De-identified Data: "content/books/privacy_books/irti_personal_data_etc.md"
     - Lectures:
       - Lecture 1 - Introduction: "content/books/Lectures/lecture_1.md"
-      - Lecture 2 + 3： GNSS Code Code-Observation Positioning Performance for the built environment Part 1 + 2: "content/books/Lectures/lecture_2_and_3.md"
+      - Lecture 2 + 3 - GNSS Code Code-Observation Positioning Performance for the built environment Part 1 + 2: "content/books/Lectures/lecture_2_and_3.md"
       - Lecture 4 - Network RTK, GNSS Augmentation, GNSS Modernization (GUEST LECTURE): "content/books/Lectures/lecture_4.md"
