@@ -41,6 +41,7 @@ markdown_extensions:
   - attr_list
   - def_list
   - mdx_truly_sane_lists
+  - md_in_html
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -50,6 +51,10 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
 
 extra_javascript:
   - javascripts/katex.js
@@ -188,3 +193,5 @@ nav:
       - Lecture 1 - Introduction: "content/books/Lectures/lecture_1.md"
       - Lecture 2 + 3 - GNSS Code Code-Observation Positioning Performance for the built environment Part 1 + 2: "content/books/Lectures/lecture_2_and_3.md"
       - Lecture 4 - Network RTK, GNSS Augmentation, GNSS Modernization (GUEST LECTURE): "content/books/Lectures/lecture_4.md"
+  - Questions:
+      - Assignment 0 - Formative: "content/questions/lab_0.md"
