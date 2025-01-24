@@ -1,0 +1,4397 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../map_projections-long/">
+      
+      
+        <link rel="next" href="../../indoor/spaces-long/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>RDNAP - GEO1003 - Shared Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#rdnap" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="GEO1003 - Shared Notes" class="md-header__button md-logo" aria-label="GEO1003 - Shared Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GEO1003 - Shared Notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              RDNAP
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ZokszY/GEO1003-Shared_Notes" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../intro/" class="md-tabs__link">
+          
+  
+  Concise notes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../intro-long/" class="md-tabs__link">
+          
+  
+  Long notes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../exams_overview/" class="md-tabs__link">
+        
+  
+    
+  
+  Exams overview
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../books/groves-principles-of-GNSS/1-introduction/" class="md-tabs__link">
+          
+  
+  Books notes
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../questions/lab_0/" class="md-tabs__link">
+          
+  
+  Questions
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="GEO1003 - Shared Notes" class="md-nav__button md-logo" aria-label="GEO1003 - Shared Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    GEO1003 - Shared Notes
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ZokszY/GEO1003-Shared_Notes" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Concise notes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Concise notes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How does GNSS work?
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            How does GNSS work?
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_does_gnss_work/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_does_gnss_work/fundamental-concepts-and-overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fundamental Concepts and Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_does_gnss_work/segments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPS segments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_does_gnss_work/signal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radio Signal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_does_gnss_work/initialisation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Initialisation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_does_gnss_work/pseudorange/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pseudorange Measurement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_does_gnss_work/carrier_phase/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Carrier Phase Measurement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_does_gnss_work/jamming_spoofing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jamming and Spoofing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    GNSS performance
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            GNSS performance
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gnss_performance/error_sources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Error Sources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gnss_performance/accuracy_precision/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Accuracy and Precision
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gnss_performance/dilution_of_precision/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dilution of Precision
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gnss_performance/availability_continuity_integrity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Availability, Continuity and Integrity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gnss_performance/ppp_rtk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PPP & RTK
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gnss_performance/dgnss/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Differential GNSS (DGNSS)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    CRS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            CRS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../coordinate_systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coordinate Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terrestrial_reference_frames_systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Terrestrial Reference Systems and Frames
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datum_transformations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Datum and Transformations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../map_projections/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Map Projections
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rd_nap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RDNAP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Indoor Positioning
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            Indoor Positioning
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../indoor/spaces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Spaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../indoor/approaches/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wi-Fi-Based Approaches
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../indoor/radio_based/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radio-based Localisation Techniques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../indoor/other_techniques/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hybrid and Other Techniques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../indoor/indoorgml/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IndoorGML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Location awareness and privacy
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            Location awareness and privacy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../privacy/position_location_place_area/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Position, Location, Place and Area
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../privacy/european_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Personal Data Protection in the European Union
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../pdf/notes.pdf" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PDF version
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Long notes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Long notes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How does GNSS work?
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            How does GNSS work?
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_does_gnss_work/intro-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_does_gnss_work/fundamental-concepts-and-overview-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fundamental Concepts and Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_does_gnss_work/segments-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPS segments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_does_gnss_work/signal-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radio Signal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_does_gnss_work/initialisation-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Initialisation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_does_gnss_work/pseudorange-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pseudorange Measurement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_does_gnss_work/carrier_phase-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Carrier Phase Measurement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_does_gnss_work/jamming_spoofing-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jamming and Spoofing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    GNSS performance
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            GNSS performance
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gnss_performance/error_sources-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Error Sources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gnss_performance/accuracy_precision-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Accuracy and Precision
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gnss_performance/dilution_of_precision-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dilution of Precision
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gnss_performance/availability_continuity_integrity-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Availability, Continuity and Integrity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gnss_performance/ppp_rtk-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PPP & RTK
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gnss_performance/dgnss-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Differential GNSS (DGNSS)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    CRS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            CRS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../coordinate_systems-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coordinate Systems
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terrestrial_reference_frames_systems-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Terrestrial Reference Systems and Frames
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datum_transformations-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Datum and Transformations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../map_projections-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Map Projections
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    RDNAP
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    RDNAP
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rdnap" class="md-nav__link">
+    <span class="md-ellipsis">
+      RDNAP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RDNAP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#0-coordinate-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      0. Coordinate Systems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0. Coordinate Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rijksdriehoeksmeting-rd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rijksdriehoeksmeting (RD)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normaal-amsterdams-peil-nap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Normaal Amsterdams Peil (NAP)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-coordinate-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Coordinate transformation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-transformation-from-etrs89-to-rd-and-nap" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Transformation from ETRS89 to RD and NAP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Transformation from ETRS89 to RD and NAP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-notation-in-degrees-minutes-and-seconds" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Notation in degrees, minutes and seconds
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-datum-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Datum transformation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 Datum transformation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#221-conversion-to-geocentric-cartesian-coordinates" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2.1 Conversion to geocentric Cartesian coordinates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#222-3d-similarity-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2.2 3D similarity transformation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#223-conversion-from-geocentric-cartesian-coordinates" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2.3 Conversion from geocentric Cartesian coordinates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-rd-correction" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 RD correction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3 RD correction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231-bilinear-correction-grid-interpolation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.1 Bilinear correction grid interpolation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232-determine-nearest-grid-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.2 Determine nearest grid points
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#233-iterative-correction" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.3 Iterative correction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#234-datum-transformation-in-the-correction-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.4 Datum transformation in the correction grid
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-map-projection" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 Map projection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 Map projection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#241-projection-from-ellipsoid-to-sphere" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.1 Projection from ellipsoid to sphere
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#242-projection-from-sphere-to-plane" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.2 Projection from sphere to plane
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-height-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 Height transformation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5 Height transformation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#251-bilinear-quasi-geoid-grid-interpolation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5.1 Bilinear quasi-geoid grid interpolation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#252-transformation-to-nap" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5.2 Transformation to NAP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-transformation-from-rd-and-nap-to-etrs89" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Transformation from RD and NAP to ETRS89
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Transformation from RD and NAP to ETRS89">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-inverse-map-projection" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Inverse map projection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 Inverse map projection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#311-projection-from-plane-to-sphere" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.1 Projection from plane to sphere
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#312-projection-from-sphere-to-ellipsoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.2 Projection from sphere to ellipsoid
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-rd-correction" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 RD correction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 RD correction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#321-direct-correction" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2.1 Direct correction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#322-datum-transformation-in-the-correction-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2.2 Datum transformation in the correction grid
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-datum-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Datum transformation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-notation-in-degrees-minutes-and-seconds" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Notation in degrees, minutes and seconds
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-height-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Height transformation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Indoor Positioning
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Indoor Positioning
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../indoor/spaces-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Spaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../indoor/approaches-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wi-Fi-Based Approaches
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../indoor/radio_based-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Radio-based Localisation Techniques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../indoor/other_techniques-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hybrid and Other Techniques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../indoor/indoorgml-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IndoorGML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Location awareness and privacy
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Location awareness and privacy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../privacy/position_location_place_area-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Position, Location, Place and Area
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../privacy/european_data-long/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Personal Data Protection in the European Union
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../pdf/notes-long.pdf" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PDF version
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exams_overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exams overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Books notes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Books notes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Groves - 2013 - Principles of GNSS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Groves - 2013 - Principles of GNSS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/groves-principles-of-GNSS/1-introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1 - Introduciton
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tiberius - 2022 - Surveying and Mapping
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Tiberius - 2022 - Surveying and Mapping
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/tiberius/12-intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12 - Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/tiberius/13-ranging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13 - Ranging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/tiberius/14-positioning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14 - Positioning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/tiberius/15-gps_positioning_modes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    15 - GPS positioning modes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/tiberius/16-gnss_and_applications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    16 - GNSS and applications
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Hexagon - Intro to GNSS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Hexagon - Intro to GNSS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/hexagon_intro_to_GNSS/1-Overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1 - Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/hexagon_intro_to_GNSS/2-Basic%20GNSS%20concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2 - Basic GNSS concepts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/hexagon_intro_to_GNSS/3-GNSS%20constellations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3 - GNSS constellations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/hexagon_intro_to_GNSS/4-GNSS%20error%20sources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4 - GNSS error sources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/hexagon_intro_to_GNSS/5-Resolving%20errors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5 - Resolving errors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/hexagon_intro_to_GNSS/6-Sensor%20fusion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6 - Sensor fusion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/hexagon_intro_to_GNSS/7-GNSS%20threats/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7 - GNSS threats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/hexagon_intro_to_GNSS/8-Autonomy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8 - Autonomy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/hexagon_intro_to_GNSS/9-GNSS%20applications%20and%20equipment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9 - GNSS applications and equipment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    PPP-RTK Market and Technology Report
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            PPP-RTK Market and Technology Report
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/ppp-rtk_market_and_technology_report/2_technical_analysis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2 - Technical Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/ppp-rtk_market_and_technology_report/3_potential_applications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3 - Potential PPP-RTK Based Applications
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/ppp-rtk_market_and_technology_report/4_competitive_landscape/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4 - Competitive Landscape
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/ppp-rtk_market_and_technology_report/5_relevant_standardization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5 - Relevant Standardisation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/ppp-rtk_market_and_technology_report/6_conclusion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6 - Conclusion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    RDNAPTRANS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            RDNAPTRANS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/RDNAPTRANS/1-introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1 - Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/RDNAPTRANS/2-transformation_ETRS89_to_RD-NAP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2 - Transformation from ETRS89 to RD and NAP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/RDNAPTRANS/3-transformation_RD-NAP_to_ETRS89/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3 - Transformation from RD and NAP to ETRS89
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Articles about Indoor Positioning
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            Articles about Indoor Positioning
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/indoor_books/meshlium_smartphone_detection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Meshlium Technical Guide - Smartphone Detection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/indoor_books/sithole_position_location_plane_area_indoor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Position Location Place and Area - An Indoor Perspective
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/indoor_books/shixiong_xia_indoor_fingerprinting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Indoor Fingerprint Positioning Based on Wi-Fi - An Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/indoor_books/lowry_visual_place_recognition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visual Place Recognition <br>
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/indoor_books/mautz_indoor_positioning_technologies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Indoor Positioning Technologies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/indoor_books/zafari_indoor_localisation_2019/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Localisation Techniques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/indoor_books/OGC_IndoorGML/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Indoor GML - A Standard Approach for Indoor Maps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Articles about Privacy
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            Articles about Privacy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/privacy_books/gambino_location_data_and_privacy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Location Data and Privacy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/privacy_books/irti_personal_data_etc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Personal Data, Non-personal Data, Anonymised Data, Pseudonymised Data, De-identified Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lectures
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            Lectures
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/Lectures/lecture_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lecture 1 - Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/Lectures/lecture_2_and_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lecture 2 + 3 - GNSS Code Code-Observation Positioning Performance for the built environment Part 1 + 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../books/Lectures/lecture_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lecture 4 - Network RTK, GNSS Augmentation, GNSS Modernization (GUEST LECTURE)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Questions
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Questions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../questions/lab_0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Assignment 0 - Formative
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../questions/RDNAPTRANS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RDNAPTRANS, CRS, and Map Projections
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rdnap" class="md-nav__link">
+    <span class="md-ellipsis">
+      RDNAP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RDNAP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#0-coordinate-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      0. Coordinate Systems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0. Coordinate Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rijksdriehoeksmeting-rd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rijksdriehoeksmeting (RD)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normaal-amsterdams-peil-nap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Normaal Amsterdams Peil (NAP)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-coordinate-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Coordinate transformation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-transformation-from-etrs89-to-rd-and-nap" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Transformation from ETRS89 to RD and NAP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Transformation from ETRS89 to RD and NAP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-notation-in-degrees-minutes-and-seconds" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Notation in degrees, minutes and seconds
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-datum-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Datum transformation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 Datum transformation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#221-conversion-to-geocentric-cartesian-coordinates" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2.1 Conversion to geocentric Cartesian coordinates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#222-3d-similarity-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2.2 3D similarity transformation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#223-conversion-from-geocentric-cartesian-coordinates" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2.3 Conversion from geocentric Cartesian coordinates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-rd-correction" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 RD correction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3 RD correction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231-bilinear-correction-grid-interpolation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.1 Bilinear correction grid interpolation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232-determine-nearest-grid-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.2 Determine nearest grid points
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#233-iterative-correction" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.3 Iterative correction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#234-datum-transformation-in-the-correction-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.4 Datum transformation in the correction grid
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-map-projection" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 Map projection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 Map projection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#241-projection-from-ellipsoid-to-sphere" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.1 Projection from ellipsoid to sphere
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#242-projection-from-sphere-to-plane" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.2 Projection from sphere to plane
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-height-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 Height transformation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5 Height transformation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#251-bilinear-quasi-geoid-grid-interpolation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5.1 Bilinear quasi-geoid grid interpolation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#252-transformation-to-nap" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5.2 Transformation to NAP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-transformation-from-rd-and-nap-to-etrs89" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Transformation from RD and NAP to ETRS89
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Transformation from RD and NAP to ETRS89">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-inverse-map-projection" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Inverse map projection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 Inverse map projection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#311-projection-from-plane-to-sphere" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.1 Projection from plane to sphere
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#312-projection-from-sphere-to-ellipsoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.2 Projection from sphere to ellipsoid
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-rd-correction" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 RD correction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 RD correction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#321-direct-correction" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2.1 Direct correction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#322-datum-transformation-in-the-correction-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2.2 Datum transformation in the correction grid
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-datum-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Datum transformation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-notation-in-degrees-minutes-and-seconds" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Notation in degrees, minutes and seconds
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-height-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Height transformation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/ZokszY/GEO1003-Shared_Notes/edit/main/docs/content/notes/crs/rd_nap-long.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/ZokszY/GEO1003-Shared_Notes/raw/main/docs/content/notes/crs/rd_nap-long.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
+    </a>
+  
+
+
+  <h1>RDNAP</h1>
+
+<h2 id="rdnap">RDNAP</h2>
+<h3 id="0-coordinate-systems">0. Coordinate Systems</h3>
+<p>Official 3D coordinate system of the Netherlands and Europe: European Terrestrial Reference System 1989 (ETRS89).
+ETRS89 is linked to the International Terrestrial Reference System (ITRS) by a time-dependant coordinate transformation.
+National coordinate systems in Europe are linked to ETRS89.</p>
+<h4 id="rijksdriehoeksmeting-rd">Rijksdriehoeksmeting (RD)</h4>
+<p>Coordinates in the Dutch <strong>Stelsel van de Rijksdriehoeksmeting (RD)</strong> are the most-frequently used 2D coordinates on land and internal waters.
+RD coordinates are defined by the official transformation from ETRS89 coordinates.
+Maintaining reference points for ETRS89 and the transformation to RD coordinates are legal responsibilities of Kadaster.</p>
+<p>The <strong>Stelsel van de Rijksdriehoeksmeting (RD)</strong> was created using triangulation from church spires and stone markers (historical). It has no time dependence; the differences are &lt;1cm since 2000. It uses one EPSG-code (EPSG:28992 (RD New) for 2D and EPSG:7415 for compound CRS with NAP). The RD projection has its origin in Amersfoort in the middle of the Netherlands, it uses conformal stereographic projection (angles are preserved) and the north of the map is not equal to the true north. Unlike what you might think, the highest accuracy is not in Amersfoort itself, but rather in a circle ~100km around it.</p>
+<p><figure id="_figure-1"><a class="glightbox" href="../../../../images/RDNAP.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="RDNAP diagram" src="../../../../images/RDNAP.png" width="600"></a><figcaption>Figure 1: RDNAP diagram</figcaption></figure></p>
+<p>To prevent confusion between the x-coordinates and y-coordinates, and to obtain always positive coordinates, the origin of the coordinates was shifted 155 km to the West and 463 km to the South (<strong>False Easting and Northing</strong>). This resulted in only positive x- and y-coordinates, where the y-coordinates are always larger than the x-coordinates.</p>
+<h4 id="normaal-amsterdams-peil-nap">Normaal Amsterdams Peil (NAP)</h4>
+<p>The national height system on land and internal waters in the Netherlands is called <strong>Normaal Amsterdams Peil (NAP)</strong> and is based on the average summer flood in 1683-1684. Maintenance is based on point stability and it uses the NLGEO2018 geoid for GNSS measurements. Ellipsoidal heights in ETRS89 can be transformed with the quasi-geoid model to NAP with a precision higher than ETRS89 coordinates obtained with most GNSS measurements.
+Values range between 39.1 – 48.7m. The NAP is a legal responsibility of Rijkswaterstaat</p>
+<p>For parts of the Noordzee however, the NAP cannot be used. Instead, they use the <strong>Lowest Astronomical Tide</strong> (LAT), which is the water depth in Worst-case astronomical conditions and average meteorological conditions.</p>
+<h3 id="1-coordinate-transformation">1. Coordinate transformation</h3>
+<p>The official coordinate transformation between European ETRS89 coordinates and Dutch coordinates in RD and NAP is called RDNAPTRANS™.
+It uses a Datum transformation and a correction grid (see fig.) in combination with the map projection to transform the values. The height of the transformation is determined by a quasi-geoid.</p>
+<p><figure id="_figure-2"><a class="glightbox" href="../../../../images/RDNAPTRANS.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="NTv2 transformation procedure used by RDNAPTRANS™2018" src="../../../../images/RDNAPTRANS.png" width="600"></a><figcaption>Figure 2: NTv2 transformation procedure used by RDNAPTRANS™2018</figcaption></figure></p>
+<p>Below are the errors of the RDNAPTRANS:</p>
+<p><figure id="_figure-3"><a class="glightbox" href="../../../../images/RDNAPTRANS_errors.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Errors of RDNAPTRANS™" src="../../../../images/RDNAPTRANS_errors.png" width="300"></a><figcaption>Figure 3: Errors of RDNAPTRANS™</figcaption></figure></p>
+<p>The recommended ETRS89 realisation is ETRF2000 at epoch 2010.50 (AGRS2010). When using RDNAPTRANS™2018 it is important to use this realisation and epoch, especially for the height. For applications demanding high accuracy, it is recommended to obtain the NAP height of the point of interest by levelling to nearby NAP benchmarks.</p>
+<p><figure id="_figure-4"><a class="glightbox" href="../../../../images/Steps_transformation_procedure.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Figure 1.2.2" src="../../../../images/Steps_transformation_procedure.png" width="600"></a><figcaption>Figure 4: Figure 1.2.2</figcaption></figure></p>
+<p>There are two variants for the implementation of the horizontal component of RDNAPTRANS™2018 and two variants for the vertical component (figure called Figure 1.2.2).</p>
+<p>Implementation variant 1 applies the datum transformation as a separate step using a 3D similarity transformation.
+The advantage of implementation variant 1 is that it has no strict bounds for the area where horizontal coordinates can be transformed correctly. The disadvantage is that many software packages do not support implementation variant 1 for the horizontal component.</p>
+<p>Implementation variant 2 includes the datum transformation in the correction grid and uses a different quasi-geoid grid for the height transformation. Implementation variant 2 for the horizontal component is supported by more software but can only be used within the bounds of the correction grid (Figure 1.1.1). The difference in the resulting coordinates between the two variants is well below 0.0010 m within the bounds of the RDNAPTRANS™2018 grids.</p>
+<h3 id="2-transformation-from-etrs89-to-rd-and-nap">2. Transformation from ETRS89 to RD and NAP</h3>
+<h4 id="21-notation-in-degrees-minutes-and-seconds">2.1 Notation in degrees, minutes and seconds</h4>
+<p>ETRS89 coordinates are commonly expressed in ellipsoidal geographic coordinates latitude, longitude and ellipsoidal height.</p>
+<h4 id="22-datum-transformation">2.2 Datum transformation</h4>
+<h5 id="221-conversion-to-geocentric-cartesian-coordinates">2.2.1 Conversion to geocentric Cartesian coordinates</h5>
+<p>Variant 1 - The ellipsoidal geographic ETRS89 coordinates of a point of interest must be converted to geocentric Cartesian ETRS89 coordinates to be able to apply a 3D similarity transformation. (Formula 2.2.1)
+Variant 2 - the datum transformation (Section 2.2.1, 2.2.2 and 2.2.3) is included in the correction grid (Section 2.3).</p>
+<p>A fixed ellipsoidal height is used instead of the actual height of the point of interest.
+As a result, points with the same latitude and longitude in ETRS89 that differ in height get exactly the same RD coordinates.
+This enables 2D transformation between ETRS89 and RD and straightforward implementation in software like GIS packages.
+However, it introduces small differences between back and forth transformation.</p>
+<h5 id="222-3d-similarity-transformation">2.2.2 3D similarity transformation</h5>
+<p>The formula for a 3D similarity transformation must be applied to the geocentric Cartesian ETRS89 coordinates of the point of interest (Formula 2.2.2).
+The obtained geocentric Cartesian coordinates are in the geodetic datum of RD.
+Since the name RD is often used for projected coordinates only, the geodetic datum is often referred to as RD Bessel or just Bessel.</p>
+<h5 id="223-conversion-from-geocentric-cartesian-coordinates">2.2.3 Conversion from geocentric Cartesian coordinates</h5>
+<p>After the 3D similarity transformation, the geocentric Cartesian Bessel coordinates of the point of interest must be converted back to ellipsoidal geographic Bessel coordinates (Formula 2.2.3).</p>
+<h4 id="23-rd-correction">2.3 RD correction</h4>
+<h5 id="231-bilinear-correction-grid-interpolation">2.3.1 Bilinear correction grid interpolation</h5>
+<p>The ellipsoidal geographic coordinates of a point of interest obtained by datum transformation of implementation variant 1 are pseudo Bessel coordinates. Due to the error propagation of measurement noise of the original (1888–1928) measurements of RD, the pseudo Bessel coordinates must be corrected up to 0.25 m to obtain real Bessel coordinates.
+For implementation variant 2, the datum transformation is included in the correction grid (Section 2.3.4).
+The corrections are obtained from a regular grid of values for latitude correction and a regular grid of values for longitude correction, using bilinear interpolation (Formula 2.3.1).</p>
+<h5 id="232-determine-nearest-grid-points">2.3.2 Determine nearest grid points</h5>
+<p>To transform the point of interest, the nearest NW, NE, SW and SE grid values are required.
+Grid values can be read one by one from the binary grid file by direct access or the entire grid of the binary or ASCII text file can be assigned to an array variable first.</p>
+<h5 id="233-iterative-correction">2.3.3 Iterative correction</h5>
+<p>The horizontal ellipsoidal geographic pseudo Bessel coordinates of the point of interest must be corrected to real Bessel coordinates (Formula 2.3.3) using the interpolated correction grid value of the point of interest.
+The horizontal ellipsoidal geographic coordinates of the correction grid points are in real Bessel.
+Therefore, also the coordinates of the point of interest are needed in real Bessel to determine the right correction.
+To solve this, the real Bessel coordinates are computed iteratively, until the difference between subsequent iterations becomes smaller than the precision threshold.</p>
+<h5 id="234-datum-transformation-in-the-correction-grid">2.3.4 Datum transformation in the correction grid</h5>
+<p>It is possible to include the datum transformation in the correction grid.
+The alternative grid for this implementation variant 2 contains the latitude and longitude corrections up to 0.25 m, but also the datum difference (about 0.1 km in the central part of the Netherlands).
+In that way the 3D similarity transformation (Section 2.2) is not needed.</p>
+<h4 id="24-map-projection">2.4 Map projection</h4>
+<h5 id="241-projection-from-ellipsoid-to-sphere">2.4.1 Projection from ellipsoid to sphere</h5>
+<p>The corrected ellipsoidal geographic Bessel coordinates of a point of interest must be projected to obtain RD coordinates.
+The used RD map projection is a double projection.
+The first step is a Gauss conformal projection from the ellipsoid to a sphere (Formula 2.4.1).</p>
+<h5 id="242-projection-from-sphere-to-plane">2.4.2 Projection from sphere to plane</h5>
+<p>The second step of the RD map projection of the point of interest is an oblique stereographic conformal projection from sphere to a plane to obtain RD coordinates (Formula 2.4.2).</p>
+<h4 id="25-height-transformation">2.5 Height transformation</h4>
+<h5 id="251-bilinear-quasi-geoid-grid-interpolation">2.5.1 Bilinear quasi-geoid grid interpolation</h5>
+<p>The ellipsoidal height is not used with RD coordinates as it is purely geometrical and has no physical meaning. The height transformation from ellipsoidal ETRS89 height of a point of interest to NAP height is based on the quasi-geoid model NLGEO2018.
+The quasi-geoid height at the point of interest is obtained by bilinear interpolation of a regular grid of quasi-geoid height values (Formula 2.5.1).</p>
+<p>To transform the point of interest, the nearest NW, NE, SW and SE grid values are required.</p>
+<p>The horizontal coordinates of the grid points for which the quasi-geoid height is given are in ETRS89 (variant 1) or in Bessel (variant 2), but the quasi-geoid height is relative to the ETRS89 ellipsoid in both cases.</p>
+<p>Implementation variant 1 uses the ETRS89 grid for transformation in both transformation directions, for ETRS89 to RD and NAP as well as RD and NAP to ETRS89.
+Using a different grid for the transformation back is not recommended, as it can result in too large differences after repeatedly transforming back and forth.</p>
+<p>The quasi-geoid heights are in metres, spacing and coordinates of grid bounds are given in decimal degrees with conventional sign, thus east of the Greenwich meridian is positive.</p>
+<h5 id="252-transformation-to-nap">2.5.2 Transformation to NAP</h5>
+<p>The ellipsoidal ETRS89 height of the point of interest must be transformed to NAP height (Formula 2.5.2) using the interpolated quasi-geoid height of the point of interest.</p>
+<h3 id="3-transformation-from-rd-and-nap-to-etrs89">3. Transformation from RD and NAP to ETRS89</h3>
+<h4 id="31-inverse-map-projection">3.1 Inverse map projection</h4>
+<h5 id="311-projection-from-plane-to-sphere">3.1.1 Projection from plane to sphere</h5>
+<p>RD coordinates of a point of interest must be converted to Bessel coordinates before the other steps of the transformation can be performed.
+The RD map projection is a double projection. The first step of the inverse map projection is an inverse oblique stereographic conformal projection from the RD projection plane to a sphere (Formula 3.1.1).</p>
+<h5 id="312-projection-from-sphere-to-ellipsoid">3.1.2 Projection from sphere to ellipsoid</h5>
+<p>The second step of the inverse RD map projection is an inverse Gauss conformal projection from the sphere to the Bessel ellipsoid to obtain Bessel coordinates of the point of interest (Formula 3.1.2).</p>
+<h4 id="32-rd-correction">3.2 RD correction</h4>
+<h5 id="321-direct-correction">3.2.1 Direct correction</h5>
+<p>The ellipsoidal geographic coordinates of a point of interest obtained by the inverse map projection, are real Bessel coordinates. Due to the error propagation of measurement noise of the original (1888–1928) measurements of RD, the real Bessel coordinates must be corrected up to 0.25 m to obtain pseudo Bessel coordinates. For implementation variant 2, the datum transformation is included in the correction grid (Section 3.2.2).
+The corrections are obtained from a regular grid of values for latitude correction and a regular grid of values for longitude correction, using bilinear interpolation (Formula 2.3.1).</p>
+<p>To transform the point of interest, the nearest NW, NE, SW and SE grid values are required
+The horizontal ellipsoidal geographic real Bessel coordinates of the point of interest must be corrected to pseudo Bessel coordinates (Formula 3.2.1) using the interpolated correction grid value of the point of interest.
+No iteration is needed for the transformation from RD to ETRS89 coordinates as the grid is given in real Bessel coordinates.</p>
+<h5 id="322-datum-transformation-in-the-correction-grid">3.2.2 Datum transformation in the correction grid</h5>
+<p>It is possible to include the datum transformation in the correction grid.
+In that way the 3D similarity transformation (Section 3.3) is not needed.
+With this alternative grid a bilinear interpolation of the latitude and longitude corrections (Formula 2.3.1) at the nearest grid points (Formula 2.3.2) and correction of real Bessel coordinates (Formula 3.2.1) can be applied as for a correction grid without the datum transformation, but in this case the output are ETRS89 coordinates of the point of interest instead of pseudo Bessel coordinates.</p>
+<h4 id="33-datum-transformation">3.3 Datum transformation</h4>
+<p>The corrected ellipsoidal geographic Bessel coordinates of a point of interest must be transformed to ellipsoidal geographic ETRS89 coordinates.
+This is only needed for implementation variant 1, for variant 2 the datum transformation (Section 3.3) is included in the correction grid (Section 3.2).
+First, the ellipsoidal geographic Bessel coordinates of a point of interest must be converted to geocentric Cartesian Bessel coordinates (Formula 2.2.1) to be able to apply a 3D similarity transformation.</p>
+<p>Unlike conventional use in transformations, including RDNAPTRANS™2008 and earlier versions of RDNAPTRANS™, a fixed ellipsoidal height is used instead of the actual height of the point of interest.
+Points with the same latitude and longitude in RD that differ in height get exactly the same horizontal ETRS89 coordinates. This enables 2D transformation between RD and ETRS89 and straightforward implementation in software like GIS packages.
+However, it introduces small differences between back and forth transformation. These differences are below 0.0010 m up to 500 km outside the bounds of the RDNAPTRANS™2018 grids.</p>
+<p>The 3D similarity transformation must be applied to the geocentric Cartesian Bessel coordinates of the point of interest to obtain geocentric Cartesian ETRS89 coordinates.
+The datum transformation uses the same formulas for the 3D similarity transformation from RD to ETRS89 as from ETRS89 to RD (Formula 2.2.2). So the order is first rotate and then translate, instead of inversing the order to translating and rotating. As a result, the inverse transformation parameters do not only have opposite sign, but the parameters also have slightly different numbers (except for the scale difference parameter). Sometimes the differences are only apparent in the last digit. The parameters could be computed from the inverse parameters too (Section 2.2.2).</p>
+<p>After the 3D similarity transformation, the geocentric Cartesian ETRS89 coordinates of the point of interest must be converted back to ellipsoidal geographic ETRS89 coordinates (Formula 2.2.3). The latitude is computed iteratively. The parameters of the GRS80 ellipsoid (Section 2.2.1) are needed for the conversion to ellipsoidal geographic coordinates for the transformation from RD to ETRS89.</p>
+<h4 id="34-notation-in-degrees-minutes-and-seconds">3.4 Notation in degrees, minutes and seconds</h4>
+<p>The ETRS89 coordinates of a point of interest obtained after transformation are in radians or decimal degrees, depending on the type of goniometry functions used. These coordinates must be converted to decimal degrees and optionally to degrees, minutes and seconds (Formula 3.4).</p>
+<h4 id="35-height-transformation">3.5 Height transformation</h4>
+<p>The physical NAP height of a point of interest can be transformed to the purely geometrical ellipsoidal ETRS89 height. The height transformation from NAP to ETRS89 is based on the quasi-geoid model NLGEO2018. The quasi-geoid height at the point of interest is obtained by bilinear interpolation of a regular grid of quasi-geoid height values (Formula 2.5.1). A unit conversion (Formula 2.1) is only needed when working with radians.</p>
+<p>To transform the point of interest, the nearest NW, NE, SW and SE grid values are required. Grid values can be read one by one from the binary grid file by direct access or the entire grid of the binary or ASCII text file can be assigned to an array variable first. In both cases, the indices of the required grid values need to be determined.
+The horizontal coordinates of the grid points for which the quasi-geoid height is given are in ETRS89 (variant 1) or in Bessel (variant 2), but the quasi-geoid height is relative to the ETRS89 ellipsoid in both cases.
+Implementation variant 1 uses the ETRS89 grid for transformation in both transformation directions, for RD and NAP to ETRS89 as well as ETRS89 to RD and NAP. Using a different grid for the transformation back is not recommended, as it can result in too large differences after repeatedly transforming back and forth.</p>
+<p>The NAP height of the point of interest must be transformed to ellipsoidal ETRS89 height (Formula 3.5) using the interpolated quasi-geoid height of the point of interest.</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 22, 2025</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2024</span>
+  </span>
+
+    
+    
+    
+      
+  <span class="md-source-file__fact">
+    
+      
+  <span class="md-icon" title="Contributors">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+  </span>
+  <span>GitHub</span>
+
+    
+    <nav>
+      
+        <a href="https://github.com/ZokszY" class="md-author" title="@ZokszY">
+          
+          <img src="https://avatars.githubusercontent.com/u/136007010?v=4&size=72" alt="ZokszY">
+        </a>
+      
+        <a href="https://github.com/CAires91" class="md-author" title="@CAires91">
+          
+          <img src="https://avatars.githubusercontent.com/u/184924647?v=4&size=72" alt="CAires91">
+        </a>
+      
+      
+      
+    </nav>
+  </span>
+
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.action.edit", "content.action.view", "navigation.tabs", "navigation.top"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+        <script src="../../../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

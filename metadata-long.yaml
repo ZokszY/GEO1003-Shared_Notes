@@ -1,0 +1,20 @@
+title: "GEO1003 - Shared Notes"
+author: "Master Geomatics Students"
+lang: "en"
+fontsize: "11pt"
+documentclass: "scrartcl"
+toc: true
+toc-depth: 3
+geometry: a4paper, margin=0.75in, top=0.75in, bottom=0.75in, left=1in, right=1in
+header-includes:
+  - \usepackage{hyperref}
+  - \hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+  - \usepackage{fancyhdr}
+  - \pagestyle{fancy}
+  - \fancyhf{}
+  - \fancyhead[L]{GEO1003 - Shared Notes}
+  - \fancyhead[R]{\thepage}
+  - \newcommand{\chapterbreak}{\clearpage} 
+  - \pretocmd{\section}{\chapterbreak}{}{} 
+  - \DeclareUnicodeCharacter{2260}{\ensuremath{\neq}}
+  - \DeclareUnicodeCharacter{2248}{\ensuremath{\approx}}

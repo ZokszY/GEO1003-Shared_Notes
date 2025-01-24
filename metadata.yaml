@@ -1,0 +1,18 @@
+title: "GEO1003 - Shared Notes"
+author: "Master Geomatics Students"
+lang: "en"
+fontsize: "10pt"
+documentclass: "scrartcl"
+toc: true
+toc-depth: 3
+geometry: a4paper, top=0.75in, bottom=0.5in, left=0.5in, right=0.5in
+header-includes:
+  - \usepackage{hyperref}
+  - \hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+  - \usepackage{fancyhdr}
+  - \pagestyle{fancy}
+  - \fancyhf{}
+  - \fancyhead[L]{GEO1003 - Shared Notes}
+  - \fancyhead[R]{\thepage}
+  - \DeclareUnicodeCharacter{2260}{\ensuremath{\neq}}
+  - \DeclareUnicodeCharacter{2248}{\ensuremath{\approx}}
