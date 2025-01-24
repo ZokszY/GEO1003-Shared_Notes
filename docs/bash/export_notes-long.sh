@@ -94,7 +94,7 @@ done <"$input_file"
 
 # Run Pandoc with the modified list of files
 mkdir -p pdf
-pandoc --from=markdown+rebase_relative_paths -s -o pdf/notes-long.pdf --lua-filter=add_date.lua --metadata-file=metadata.yaml --number-sections --pdf-engine=pdflatex $(cat "$temp_file")
+pandoc --from=markdown+rebase_relative_paths -s -o pdf/notes-long.pdf --lua-filter=add_date.lua --metadata-file=metadata-long.yaml --number-sections --pdf-engine=pdflatex $(cat "$temp_file")
 
 # Clean up the temporary file
 rm "$temp_file"
