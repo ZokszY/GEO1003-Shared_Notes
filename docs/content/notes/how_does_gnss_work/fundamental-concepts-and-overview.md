@@ -1,6 +1,6 @@
 ## Fundamental Concepts and Overview
 
-Notes from the chapter Introduction of the book "Principles of GNSS, Inertial, and Miltisensor Integrated Navigation Systems" - Paul D. Groves
+Notes from the chapter Introduction of the book "Principles of GNSS, Inertial, and Multisensor Integrated Navigation Systems" - Paul D. Groves
 
 ### Fundamental concepts
 
@@ -25,8 +25,8 @@ Position and location are related but distinct concepts:
 
 Two fundamental methods for determining position:
 
-- **Position Fixing:** Uses identifiable external information such as radio signals, acoustic, ultrasouws etc or environmental features (signs, roads, terrain, landmarks, sounds smells).
-- **Dead Reckoning:** Measures distance and direction traveled using a self-contained system, like an INS, without relying on external infrastructure. Environmental features can also assist dead reckoning by comparing repeated measurements.
+- **Position Fixing**: Uses identifiable external information such as radio signals, acoustic, ultrasounds etc or environmental features (signs, roads, terrain, landmarks, sounds smells).
+- **Dead Reckoning**: Measures distance and direction traveled using a self-contained system, like an INS, without relying on external infrastructure. Environmental features can also assist dead reckoning by comparing repeated measurements.
 
 ### Dead Reckoning
 
@@ -54,98 +54,76 @@ Performance:
 
 There are five main methods: proximity, ranging, angular positioning, pattern matching, and Doppler positioning.
 
-- **Proximity**: Simplest method, assumes the receiver's position is the transmitter's or a nearby feature's. Accuracy improves with proximity to landmarks. Short-range signals like Bluetooth, RFID, or indoor features are ideal. Using multiple landmarks allows averaging of their positions.
-  - **Containment** Intersection: A refined proximity method where containment zones around landmarks are defined. Observed landmarks localize the position to the intersection of these zones, with the center of the intersection as the position fix.
+- **Proximity**:  
+  Simplest method, assumes the receiver's position is the transmitter's or a nearby feature's. Accuracy improves with proximity to landmarks. Short-range signals like Bluetooth, RFID, or indoor features are ideal. Using multiple landmarks allows averaging of their positions.  
+  **Containment** Intersection: A refined proximity method where containment zones around landmarks are defined. Observed landmarks localize the position to the intersection of these zones, with the center of the intersection as the position fix.
 
-  ![alt text](../../../images/proximity-positioning.png)
-
-- **Ranging**: Measures distances to landmarks and defines circular lines of position (LOPs) based on these ranges. The user's position lies at the intersection of LOPs. At least two LOPs are needed; three resolve ambiguities. (Or prior information)
-In three-dimensional positioning, each range measurement defines a spherical surface of position (SOP) centered at a landmark. The intersection of:
-
+  ![Proximity positioning](../../../images/proximity-positioning.png){ width="500" }
+- **Ranging**:  
+  Measures distances to landmarks and defines circular lines of position (LOPs) based on these ranges. The user's position lies at the intersection of LOPs. At least two LOPs are needed; three resolve ambiguities. (Or prior information)  
+  In three-dimensional positioning, each range measurement defines a spherical surface of position (SOP) centered at a landmark. The intersection of:  
   - Two SOPs forms a circular line of position (LOP).
   - Three SOPs intersects at two points, requiring additional information or a fourth SOP to determine a unique position fix.
-
-  If the user and landmarks are coplanar, only planar position components can be determined, limiting vertical accuracy in terrestrial systems.
-
-  Range Measurement: bsed on signal time of flight (TOF), multiplied by the speed of light or sound. Accurate TOF measurement depends on transmitter-receiver time synchronization.
+  
+  If the user and landmarks are coplanar, only planar position components can be determined, limiting vertical accuracy in terrestrial systems.  
+  Range Measurement: based on signal time of flight (TOF), multiplied by the speed of light or sound. Accurate TOF measurement depends on transmitter-receiver time synchronization.
   - Two-way ranging (e.g., distance measuring equipment - DME) minimizes synchronization errors via bidirectional signal exchange.
   - One-way ranging (e.g., GNSS) requires synchronized transmitter clocks, treating receiver clock offset as an unknown. This technique is known as passive ranging and is how GNSS works. Additional transmitters or reference receivers can correct for clock offsets.
   - Where the landmark is an environmental feature, active sensors like radar, sonar, or laser transmit signals to a landmark, measure the reflected signal's round-trip time, and calculate the range.
 
-  ![alt text](../../../images/positioningbyranging.png)
-
-- **Bearing**: A bearing is the angle in the horizontal plane between the line of sight to an object and a reference direction (e.g., true or magnetic north).
-Position Fixing with Bearings:
-
+  ![Positioning by ranging](../../../images/positioningbyranging.png){ width="500" }
+- **Bearing**:  
+  A bearing is the angle in the horizontal plane between the line of sight to an object and a reference direction (e.g., true or magnetic north).  
+  Position Fixing with Bearings:
   - Two-Dimensional Positioning: Measuring the bearing to two known landmarks defines straight LOPs. Their intersection gives the user’s position. Without a reference direction, measuring the angle difference between two landmarks defines a curved LOP, requiring three landmarks for positioning.
   - Three-Dimensional Positioning: Extends by measuring the elevation angle (line of sight vs. horizontal plane) to one landmark. However, accuracy decreases with distance, and Earth's curvature affects measurements.
 
-  ![alt text](../../../images/angularpositioning.png)
-
-- **Angle of Arrival (AOA):** Direction Finding: Uses steerable directional antennas to determine signal bearing.
+  ![Angular positioning](../../../images/angularpositioning.png){ width="400" }
+- **Angle of Arrival (AOA)**:  
+  Direction Finding: Uses steerable directional antennas to determine signal bearing.
   - Nonisotropic Transmissions: Broadcast signals with modulation varying by direction enable bearing and/or elevation determination. Examples include VHF omnidirectional radiorange (VOR) and Nokia HAIP (high-accuracy indoor positioning).
   - Environmental features can be measured using cameras, laser scanners, imaging radar, or multibeam sonar. The position of a feature in the sensor's image, combined with sensor orientation, determines its bearing and elevation.
-
-- **Integrated Navigation System:**
-
-  - Full position fixes are unnecessary; single measurements (e.g., range, bearing, or elevation of a landmark) can contribute to the navigation solution. For example, a two-dimensional position fix may be obtained by measuring
-    the range and bearing of a single landmark as shown in Figure 1.10. Adding elevation provides a three-dimensional fix.
-
-- **Landmark Identification:**  
-
-    Signals are identified via demodulation, transmitter IDs, or frequency. Environmental features are matched with stored data, requiring distinctive features and approximate position inputs to limit the size of database that must be searched to obtain a match. Even so, positioning using environmental features is normally more processor intensive than signal-based positioning.
-
-- **Pattern Matching:**
-
-    A database contains parameters varying by location (e.g., terrain height, signal strength, magnetic fields, GNSS obstructions).
-    Measured values at the user’s position are compared with database values at candidate grid points. The best match determines the position.
-    Interpolation refines results if several candidates match well. As with feature matching for landmark identification, the input of
-    an approximate position solution limits the size of the database to be searched.
-
-    Combining multiple parameters into a **location signature** enhances uniqueness and accuracy.
-    In some cases, such as terrain height, there is insufficient information to obtain an unambiguous position fix. However, if the navigation system is moving, measurements may be made at multiple positions,
-    collectively known as a transect. Position fixing can be enhanced by this. Using dead reckoning to relate transect points allows measurements to form a location signature, compared with a database for positioning, requiring interpolation if spacing differs.
-
-- **Doppler Positioning:**
-
-    Measures Doppler shift from relative transmitter-receiver motion to determine relative velocity and a conical surface of position (e.g., used in Iridium positioning).
-
-- **Height Measurement:**
-
-    Barometric Altimeter: Uses pressure to estimate height or underwater depth.
-    Radar Altimeter: Measures height above terrain for aircraft where terrain height is known.
-
-- **Data and Databases:**
-
-    Position-fixing methods rely on data like landmark positions, feature info, and pattern-matching parameters. Databases may be preloaded but require updates and significant storage for large areas.
-
-- **SLAM (simultaneous localization and mapping)**: Allows systems to create and update its own landmark databases by exploring environments, observing features several times and and using dead reckoning to track traveled distances.
+- **Integrated Navigation System**:  
+  Full position fixes are unnecessary; single measurements (e.g., range, bearing, or elevation of a landmark) can contribute to the navigation solution. For example, a two-dimensional position fix may be obtained by measuring the range and bearing of a single landmark as shown in Figure 1.10. Adding elevation provides a three-dimensional fix.
+- **Landmark Identification**:  
+  Signals are identified via demodulation, transmitter IDs, or frequency. Environmental features are matched with stored data, requiring distinctive features and approximate position inputs to limit the size of database that must be searched to obtain a match. Even so, positioning using environmental features is normally more processor intensive than signal-based positioning.
+- **Pattern Matching**:  
+  A database contains parameters varying by location (e.g., terrain height, signal strength, magnetic fields, GNSS obstructions).
+  Measured values at the user’s position are compared with database values at candidate grid points. The best match determines the position.
+  Interpolation refines results if several candidates match well. As with feature matching for landmark identification, the input of
+  an approximate position solution limits the size of the database to be searched.  
+  Combining multiple parameters into a **location signature** enhances uniqueness and accuracy.
+  In some cases, such as terrain height, there is insufficient information to obtain an unambiguous position fix. However, if the navigation system is moving, measurements may be made at multiple positions,
+  collectively known as a transect. Position fixing can be enhanced by this. Using dead reckoning to relate transect points allows measurements to form a location signature, compared with a database for positioning, requiring interpolation if spacing differs.
+- **Doppler Positioning**:  
+  Measures Doppler shift from relative transmitter-receiver motion to determine relative velocity and a conical surface of position (e.g., used in Iridium positioning).
+- **Height Measurement**:  
+  Barometric Altimeter: Uses pressure to estimate height or underwater depth.
+  Radar Altimeter: Measures height above terrain for aircraft where terrain height is known.
+- **Data and Databases**:  
+  Position-fixing methods rely on data like landmark positions, feature info, and pattern-matching parameters. Databases may be preloaded but require updates and significant storage for large areas.
+- **SLAM (simultaneous localization and mapping)**:  
+  Allows systems to create and update its own landmark databases by exploring environments, observing features several times and and using dead reckoning to track traveled distances.
   
 Many signal-based positioning systems include transmitter positions in their signals, but this can delay position computation after signal reception. A separate data link, known as assistance, can provide the necessary information on demand to reduce delays.
   
-Position fixing is essectial for determining absolute position, with errors independent of the distance traveled, but it depends on the availability of suitable signals or environmental features. To enhance position accuracy and availability, multiple position-fixing technologies or dead reckoning can be combined to bridge gaps.
+Position fixing is essential for determining absolute position, with errors independent of the distance traveled, but it depends on the availability of suitable signals or environmental features. To enhance position accuracy and availability, multiple position-fixing technologies or dead reckoning can be combined to bridge gaps.
 
 #### Signal-Based Positioning
 
 Signal-Based Positioning covers various navigation systems, from early radio-based methods to modern satellite and terrestrial systems.
 
 - Early Radio Navigation: Radio navigation began in the 1920s, with Omega providing global coverage by the 1970s.
-
 - Terrestrial Systems: Older systems like DME, VOR, and Loran provide long-range navigation, while newer methods use signals from mobile phones, Wi-Fi, Bluetooth, RFID, UWB, television, and broadcast radio for short-range positioning.
-
 - Signal of Opportunity (SOOP): Some systems use signals like mobile phone or broadcast signals without operator cooperation, relying on calibration or reference stations.
-
 - Underwater Navigation: Acoustic signals, such as ultrasound, are used for short-range underwater positioning.
-
 - Satellite Navigation: GNSS systems (e.g., GPS, GLONASS, Galileo) provide global positioning, requiring at least four satellites for 3D fixes. GNSS offers high accuracy but is vulnerable to interference, jamming, and obstructions. Differential and carrier-phase techniques enhance accuracy, achieving meter to centimeter-level precision.
-
 - GNSS vs Terrestrial Systems: GNSS offers global coverage and better accuracy, but is vulnerable to interference. Terrestrial systems like DME and enhanced Loran serve as backups, with short-range systems covering areas where GNSS signals are weak.
-
 - Maximizing Positioning: Combining different signal types improves the robustness and availability of navigation solutions.
 
 Overall, GNSS provides superior accuracy and global reach, while terrestrial and short-range systems fill gaps in environments where GNSS struggles.
 
-![alt text](../../../images/rangeandaccuracy.png)
+![Range and accuracy](../../../images/rangeandaccuracy.png){ width="350" }
 
 #### Environmental Feature Matching
 
@@ -276,5 +254,5 @@ Relative Positioning: Participants measure their positions relative to each othe
 
 #### Fault Detection
 
-- **Integrity monitoring** ensures a reliable navigation solution by detecting, isolating, and excluding faults in hardware or software. In safety-critical applications, such as aviation, formal integrity systems are essential to meet performance standards.
+**Integrity monitoring** ensures a reliable navigation solution by detecting, isolating, and excluding faults in hardware or software. In safety-critical applications, such as aviation, formal integrity systems are essential to meet performance standards.
   

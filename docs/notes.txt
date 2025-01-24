@@ -1,13 +1,13 @@
 content/notes/intro.md
 content/notes/how_does_gnss_work/title.md
 content/notes/how_does_gnss_work/intro.md
+content/notes/how_does_gnss_work/fundamental-concepts-and-overview.md
 content/notes/how_does_gnss_work/segments.md
 content/notes/how_does_gnss_work/signal.md
 content/notes/how_does_gnss_work/initialisation.md
 content/notes/how_does_gnss_work/pseudorange.md
 content/notes/how_does_gnss_work/carrier_phase.md
 content/notes/how_does_gnss_work/jamming_spoofing.md
-content/notes/how_does_gnss_work/fundamental-concepts-and-overview.md
 content/notes/gnss_performance/title.md
 content/notes/gnss_performance/error_sources.md
 content/notes/gnss_performance/accuracy_precision.md
